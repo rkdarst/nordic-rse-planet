@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Planet</title><link href="https://example.com/planet/" rel="alternate"/><link href="https://example.com/planet/atom.xml" rel="self"/><id>https://example.com/planet/atom.xml</id><updated>2026-09-14T10:00:00+00:00</updated><entry><title>Weeknotes: 14th September 2026</title><link href="https://digitalflapjack.com/weeknotes/2026-09-14/" rel="alternate"/><updated>2026-09-14T10:00:00+00:00</updated><author><name>Digital Flapjack</name></author><id>https://digitalflapjack.com/weeknotes/2026-09-14/</id><summary type="html">&lt;h1&gt;Last week&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Nordic-RSE blog planet</title><link href="https://example.com/planet/" rel="alternate"/><link href="https://example.com/planet/atom.xml" rel="self"/><id>urn:uuid:7fd32cd4-fd62-48f3-9052-920208210fb4</id><updated>2026-09-14T10:00:00+00:00</updated><entry><title>Weeknotes: 14th September 2026</title><link href="https://digitalflapjack.com/weeknotes/2026-09-14/" rel="alternate"/><updated>2026-09-14T10:00:00+00:00</updated><author><name>Digital Flapjack</name></author><id>https://digitalflapjack.com/weeknotes/2026-09-14/</id><summary type="html">&lt;h1&gt;Last week&lt;/h1&gt;
 &lt;h2&gt;Liverpool Makefest 2026&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://liverpoolmakefest.org"&gt;Liverpool Makefest 2026&lt;/a&gt; happened on Sunday and seemed to go well. This year rather than being an exhibitor I was on the organising team, as the event was effectively rebooted. After many hiccups along the way, it all seemed to come together in the end with 30 makers setting up stall and a few hundred people coming to see them. It was touch and go at times, but it looks like we pulled it off. It was definitely a team effort: so particular thanks to Jackie, Neil, Dan, and Mike, along with all the volunteers from the &lt;a href="https://doesliverpool.org/"&gt;DoES Liverpool community&lt;/a&gt; who ensured it went smoothly on the day, and the makers, some of which travelled quite a long way, who came and made the day so full of interesting things to see, hear, and touch.&lt;/p&gt;
 &lt;h2&gt;Habitat mapping&lt;/h2&gt;
@@ -22,7 +22,7 @@
 &lt;h1&gt;Interesting links&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;I missed the previous &lt;a href="https://2025.algorithmicpattern.org/conference/"&gt;Alpaca Conference&lt;/a&gt;, a celebration of generative art held in Sheffield in 2025, but &lt;a href="https://alpaca.cc/call/"&gt;the CFP the next one in May 2027&lt;/a&gt; has gone live. I think I'll submit a workshop on generative art in a functional programming style using Claudius/OCaml. By then the HTML version will hopefully be usable so people can actually make things they can share.&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>Book review: The Unaccountability Machine</title><link href="https://rkd.zgib.net/blog/2026/the-unaccountability-machine/" rel="alternate"/><updated>2026-09-13T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/the-unaccountability-machine/</id><summary type="html">
+&lt;/ul&gt;</summary></entry><entry><title>Book review: The Unaccountability Machine</title><link href="https://rkd.zgib.net/blog/2026/the-unaccountability-machine/" rel="alternate"/><updated>2026-09-13T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/the-unaccountability-machine/</id><summary type="html">
 
 &lt;p&gt;I’ve been interested in why organizations work (or seem to not work,
 despite everyone in them being good people).  Another book cited the
@@ -854,7 +854,7 @@ I’m happy with the lessons I learned along the way.&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;(PATed? I think we should adapt that: we know the server is happy as it's been patted :)&lt;/p&gt;
-&lt;span&gt;&lt;a href="#ref-1-fn-1"&gt;↩︎︎&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</summary></entry><entry><title>News channels in chat</title><link href="https://rkd.zgib.net/blog/2026/chat-news-channels/" rel="alternate"/><updated>2026-07-31T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/chat-news-channels/</id><summary type="html">
+&lt;span&gt;&lt;a href="#ref-1-fn-1"&gt;↩︎︎&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</summary></entry><entry><title>News channels in chat</title><link href="https://rkd.zgib.net/blog/2026/chat-news-channels/" rel="alternate"/><updated>2026-07-31T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/chat-news-channels/</id><summary type="html">
 
 &lt;p&gt;I hope we had a low threshold for sharing anything in chat, as long as
 the sharer puts a bit of effort into a summary.  In the CodeRefinery
@@ -1049,7 +1049,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;li&gt;Get my little Tessera pipeline running end-to-end&lt;/li&gt;
 &lt;li&gt;David Coomes' group are having a half-day meeting to review various Tessera/Habitat projects that are in progress, so I plan to attend that to try and get up to speed on the bits I don't know, and get feedback on the plans myself, Ali and Aneesh have pulled together.&lt;/li&gt;
 &lt;li&gt;Find some book to listen to on the drive to/from Cambridge. On the previous Cambridge run I listened to &lt;a href="https://www.penguin.co.uk/books/462159/we-are-not-machines-by-oconnor-sarah/9780241704226"&gt;We Are Not Machines by Sarah O'Conner&lt;/a&gt;. It was sufficiently interesting I bought the paper version so I can look up some of the references in it and blog about them here.&lt;/li&gt;
-&lt;/ul&gt;</summary></entry><entry><title>“Code” vs “wiki” (vs “book”) rules for project contributions</title><link href="https://rkd.zgib.net/blog/2026/wiki-vs-code-rules/" rel="alternate"/><updated>2026-07-20T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/wiki-vs-code-rules/</id><summary type="html">
+&lt;/ul&gt;</summary></entry><entry><title>“Code” vs “wiki” (vs “book”) rules for project contributions</title><link href="https://rkd.zgib.net/blog/2026/wiki-vs-code-rules/" rel="alternate"/><updated>2026-07-20T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/wiki-vs-code-rules/</id><summary type="html">
 
 &lt;p&gt;I have sometimes said the phrases “wiki rules”. or “cade rules” about
 contributing to a project.  What does this mean?  Roughly, “code
@@ -1171,7 +1171,7 @@ them, aggressively narrowing down.  To avoid wasted work, it’s
 “first-draft” or “notes” level work at the beginning if we aren’t sure
 about it.&lt;/p&gt;
 
-</summary></entry><entry><title>Debian with unionfs root</title><link href="https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/" rel="alternate"/><updated>2026-07-13T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/</id><summary type="html">
+</summary></entry><entry><title>Debian with unionfs root</title><link href="https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/" rel="alternate"/><updated>2026-07-13T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/</id><summary type="html">
 
 &lt;p&gt;I wanted to make a virtual machine that has a root that is immutable -
 when booted, it would have a tmpfs for all files, and then when
@@ -1293,7 +1293,7 @@ or for my case it was easiest to make it not use netfilter:&lt;/p&gt;
 &lt;p&gt;Over the last year I've made PRs on a number of small projects with few users that I happen to use, as I hope that it'll keep them going for me in the future, and perhaps help others find them useful, but that's still motivated by personal gain - I'm fixing a bug that's got in my way. How do we take the eagerness of new software engineers trying to gain experience and CV points and more widely distribute that to help maintain the broader commons?&lt;/p&gt;
 &lt;p&gt;Perhaps it's the solitary nature of coding that makes it harder to see how to bridge that gap. Real-world volunteering is in part a social thing: you get to do it with others. If I'm honest I do chalk the horse partially for selfish reasons too: it means I get to hang out with interesting people for a bit. I know from talking to others that they contribute to open source projects for that community spirit too. But I think both have a problem with bootstrapping community: there are many small open source projects that no longer have maintainers or just one maintainer for whom this isn't their main focus, yet would benefit from more regular updating; and in the real world for every Uffington White Horse there are many things in your local area that probably need someone to go maintain them but there is yet to be that community to draw people into it.&lt;/p&gt;
 &lt;h1&gt;Tack&lt;/h1&gt;
-&lt;p&gt;My thanks to the folk from the Long Now London group and the &lt;a href="https://nordic-rse.org"&gt;Nordic-RSE&lt;/a&gt; community who gave me feedback on this post, and thanks to &lt;a href="https://lbj20.blogspot.com"&gt;Laura James&lt;/a&gt; for the photo of me at work at chalkface. And a hat tip to &lt;a href="https://rkd.zgib.net"&gt;Richard Darst&lt;/a&gt; whose &lt;a href="https://scicomp.aalto.fi/scicomp/hpc-kitchen/"&gt;HPC Kitchen&lt;/a&gt; posts were partial inspiration for my musings here.&lt;/p&gt;</summary></entry><entry><title>Zulipchat guide: managing too much information</title><link href="https://rkd.zgib.net/blog/2026/zulip-guide/" rel="alternate"/><updated>2026-06-29T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/zulip-guide/</id><summary type="html">
+&lt;p&gt;My thanks to the folk from the Long Now London group and the &lt;a href="https://nordic-rse.org"&gt;Nordic-RSE&lt;/a&gt; community who gave me feedback on this post, and thanks to &lt;a href="https://lbj20.blogspot.com"&gt;Laura James&lt;/a&gt; for the photo of me at work at chalkface. And a hat tip to &lt;a href="https://rkd.zgib.net"&gt;Richard Darst&lt;/a&gt; whose &lt;a href="https://scicomp.aalto.fi/scicomp/hpc-kitchen/"&gt;HPC Kitchen&lt;/a&gt; posts were partial inspiration for my musings here.&lt;/p&gt;</summary></entry><entry><title>Zulipchat guide: managing too much information</title><link href="https://rkd.zgib.net/blog/2026/zulip-guide/" rel="alternate"/><updated>2026-06-29T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/zulip-guide/</id><summary type="html">
 
 &lt;p&gt;Zulip is a chat platform (open-source and self-hostable).  I think it
 is very good, but often confusing to newcomers.  This post explains
@@ -1538,7 +1538,7 @@ review&lt;/a&gt; that
 gives some underused features.e&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</summary></entry><entry><title>My digital sovereignty actions</title><link href="https://rkd.zgib.net/blog/2026/digital-sovereignty-actions/" rel="alternate"/><updated>2026-06-17T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/digital-sovereignty-actions/</id><summary type="html">
+</summary></entry><entry><title>My digital sovereignty actions</title><link href="https://rkd.zgib.net/blog/2026/digital-sovereignty-actions/" rel="alternate"/><updated>2026-06-17T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/digital-sovereignty-actions/</id><summary type="html">
 
 &lt;p&gt;Digital sovereignty refers to owning or having control over your data
 and digital services.  This post talks about what I do.&lt;/p&gt;
@@ -1748,7 +1748,7 @@ storage.  Backups and disaster recovery (or lack thereof) is a major
 risk when people try to self-host things.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</summary></entry><entry><title>A vision of Nordic Scientific Computing</title><link href="https://rkd.zgib.net/blog/2026/vision-of-nordic-scientific-computing/" rel="alternate"/><updated>2026-05-16T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/vision-of-nordic-scientific-computing/</id><summary type="html">
+</summary></entry><entry><title>A vision of Nordic Scientific Computing</title><link href="https://rkd.zgib.net/blog/2026/vision-of-nordic-scientific-computing/" rel="alternate"/><updated>2026-05-16T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/vision-of-nordic-scientific-computing/</id><summary type="html">
 
 &lt;p&gt;I was asked what is my vision for Nordic collaboration in scientific
 computing support.  This is something I have been thinking about for
@@ -1867,7 +1867,7 @@ to share this.)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 
-</summary></entry><entry><title>Hopes for new IT compliance</title><link href="https://rkd.zgib.net/blog/2026/hopes-for-new-it-compliance/" rel="alternate"/><updated>2026-05-11T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/hopes-for-new-it-compliance/</id><summary type="html">
+</summary></entry><entry><title>Hopes for new IT compliance</title><link href="https://rkd.zgib.net/blog/2026/hopes-for-new-it-compliance/" rel="alternate"/><updated>2026-05-11T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/hopes-for-new-it-compliance/</id><summary type="html">
 
 &lt;p&gt;I recently saw that due to “organizational change”, our small-scale
 development IT compliance process is changing.  As usual for these
@@ -1983,7 +1983,7 @@ tech companies.  We can adjust progresses to make this possible.&lt;/p&gt;
 &lt;p&gt;I don’t know if these will happen or not, but I hope we can work
 towards them.&lt;/p&gt;
 
-</summary></entry><entry><title>The platform compliance pitfall</title><link href="https://rkd.zgib.net/blog/2026/the-platform-compliance-pitfall/" rel="alternate"/><updated>2026-05-09T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/the-platform-compliance-pitfall/</id><summary type="html">
+</summary></entry><entry><title>The platform compliance pitfall</title><link href="https://rkd.zgib.net/blog/2026/the-platform-compliance-pitfall/" rel="alternate"/><updated>2026-05-09T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/the-platform-compliance-pitfall/</id><summary type="html">
 
 &lt;p&gt;Roads don’t have to accept responsibility of who drives on them.
 There are some standards for being safe, though.  Imagine how much all
@@ -2082,7 +2082,7 @@ possible, but it will be useful.&lt;/p&gt;
 problems”, I’ve seen this and think we should give more thought to the
 platform effects in the future.&lt;/p&gt;
 
-</summary></entry><entry><title>Book review: First, break all the rules</title><link href="https://rkd.zgib.net/blog/2026/book-review-first-break-all-the-rules/" rel="alternate"/><updated>2026-04-26T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/book-review-first-break-all-the-rules/</id><summary type="html">
+</summary></entry><entry><title>Book review: First, break all the rules</title><link href="https://rkd.zgib.net/blog/2026/book-review-first-break-all-the-rules/" rel="alternate"/><updated>2026-04-26T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/book-review-first-break-all-the-rules/</id><summary type="html">
 
 &lt;p&gt;I recently read the book &lt;a href="https://en.wikipedia.org/wiki/First%2C_Break_All_the_Rules"&gt;First, break all the rules&lt;/a&gt;, based
 on seeing it referred to in another source.  It is one of these things
@@ -2167,7 +2167,7 @@ was entertaining enough and wasn’t that hard to read, though, and gave
 me stuff to think about.  The things above are enough of a reminder
 for my future use, even if there isn’t &lt;em&gt;that&lt;/em&gt; much different from what
 I try anyway.&lt;/p&gt;
-</summary></entry><entry><title>Notes on Debian with a read-only root</title><link href="https://rkd.zgib.net/blog/2026/debian-read-only-root/" rel="alternate"/><updated>2026-04-12T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/debian-read-only-root/</id><summary type="html">
+</summary></entry><entry><title>Notes on Debian with a read-only root</title><link href="https://rkd.zgib.net/blog/2026/debian-read-only-root/" rel="alternate"/><updated>2026-04-12T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/debian-read-only-root/</id><summary type="html">
 
 &lt;p&gt;I run several Raspberry Pis for home servers.  They currently use SD
 cards for their root filesystems (the actual data is stored either on
@@ -2259,7 +2259,7 @@ containerd needed something mounted to be able to start.  In
 &lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-</summary></entry><entry><title>Manifesto on university IT departments</title><link href="https://rkd.zgib.net/blog/2026/it-department-manifesto/" rel="alternate"/><updated>2026-03-10T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2026/it-department-manifesto/</id><summary type="html">
+</summary></entry><entry><title>Manifesto on university IT departments</title><link href="https://rkd.zgib.net/blog/2026/it-department-manifesto/" rel="alternate"/><updated>2026-03-10T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/it-department-manifesto/</id><summary type="html">
 
 &lt;p&gt;&lt;em&gt;Alternative title: Challenging patterns with university IT for research&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This was written in 2025 and first publicly read on 12 June 2025.
@@ -2329,7 +2329,7 @@ the vision to handle both halves at the same time.&lt;/p&gt;
 aren’t supported, and IT research that isn’t controlled or secure.  We
 can do better.  In the current world, we have to do better.&lt;/p&gt;
 &lt;p&gt;END MANIFESTO&lt;/p&gt;
-</summary></entry><entry><title>Book review: Systemantics</title><link href="https://rkd.zgib.net/blog/2025/systemantics/" rel="alternate"/><updated>2025-12-15T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/2025/systemantics/</id><summary type="html">
+</summary></entry><entry><title>Book review: Systemantics</title><link href="https://rkd.zgib.net/blog/2025/systemantics/" rel="alternate"/><updated>2025-12-15T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2025/systemantics/</id><summary type="html">
 
 &lt;p&gt;I read the book &lt;a href="https://en.wikipedia.org/wiki/Systemantics"&gt;Systemantics&lt;/a&gt; by John Gall.  I saw
 some reference to it from another book, and Systemantics was short, so
@@ -2418,7 +2418,7 @@ which probably won’t work anyway.  There’s an opportunity to grow.&lt;/p&gt;
 cases, when the purposes are close enough.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</summary></entry><entry><title>RSE lessons from Civil Engineering</title><link href="https://rkd.zgib.net/blog/rse-lessons-from-civil-engineering/" rel="alternate"/><updated>2025-07-31T00:00:00+00:00</updated><author><name>RKD Blog</name></author><id>https://rkd.zgib.net/blog/rse-lessons-from-civil-engineering/</id><summary type="html">
+</summary></entry><entry><title>RSE lessons from Civil Engineering</title><link href="https://rkd.zgib.net/blog/rse-lessons-from-civil-engineering/" rel="alternate"/><updated>2025-07-31T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/rse-lessons-from-civil-engineering/</id><summary type="html">
 
 &lt;p&gt;I have had a long-running metaphor of {academic researchers, research
 software engineers} being like {architects, structural engineers}.

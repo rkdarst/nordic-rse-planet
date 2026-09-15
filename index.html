@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Planet</title>
-  <link rel="alternate" type="application/atom+xml" title="Planet Atom feed" href="https://example.com/planet/atom.xml">
+  <title>Nordic-RSE blog planet</title>
+  <link rel="alternate" type="application/atom+xml" title="Nordic-RSE blog planet Atom feed" href="https://example.com/planet/atom.xml">
   <style>
     body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
            max-width: 46em; margin: 0 auto; padding: 1em;
            color: #222; line-height: 1.5; }
     .site-header { display: flex; align-items: center; gap: 0.75em;
                    padding-bottom: 0.5em; border-bottom: 2px solid #444; }
-    .logo { width: 48px; height: 48px; flex-shrink: 0;
-            border-radius: 4px; }
-    .logo-placeholder { background: #ddd; }
+    /* Never upscaled: height is capped, width free, so a wide logo
+       keeps its shape and downscales only when too tall.  The
+       placeholder div has no intrinsic size, hence its own 48px. */
+    .logo { max-height: 4.5em; flex-shrink: 0; border-radius: 4px; }
+    .logo-placeholder { width: 72px; height: 72px; background: #ddd; }
     .site-title { margin: 0; font-size: 1.5em; }
     .generated { margin: 1em 0 0; font-size: 0.85em; color: #777; }
     .post { padding: 1em 1.25em; margin-bottom: 1.25em;
@@ -22,7 +24,7 @@
                    margin-bottom: 0.5em; }
     /* Per-feed icon (feeds[].icon in the config); feeds without one
        get a grey placeholder box.  Linked to the feed's site when set. */
-    .post-icon { width: 2.5em; height: 2.5em; border-radius: 50%;
+    .post-icon { width: 3.75em; height: 3.75em; border-radius: 50%;
                  flex-shrink: 0; object-fit: cover; }
     .icon-placeholder { background: #ddd; }
     .post-icon-link { text-decoration: none; }
@@ -64,13 +66,13 @@
 <body>
   <header class="site-header">
     
-    <div class="logo logo-placeholder"></div>
+    <img class="logo" src="https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png" alt="Nordic-RSE blog planet logo">
     
-    <title class="site-title">Planet</title>
+    <h1 class="site-title">Nordic-RSE blog planet</h1>
   </header>
 
   <main class="planet">
-    <p class="generated">Generated <span class="generated-at">2026-09-15T20:38:10+00:00</span> ·
+    <p class="generated">Generated <span class="generated-at">2026-09-15T21:22:21+00:00</span> ·
       <a class="feed-link" href="https://example.com/planet/atom.xml">Atom feed</a> ·
       This page and feed are sanitized for security, formatting may be wrong.</p>
 
@@ -83,7 +85,7 @@
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-09-14 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -119,13 +121,13 @@
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/the-unaccountability-machine/">Book review: The Unaccountability Machine</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-09-13 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -714,7 +716,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-09-07 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -805,7 +807,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-08-31 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -878,7 +880,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-08-24 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -928,7 +930,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-08-19 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -965,7 +967,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-08-10 07:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -1032,7 +1034,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-08-03 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -1084,13 +1086,13 @@ I’m happy with the lessons I learned along the way.</strong></p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/chat-news-channels/">News channels in chat</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-07-31 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -1257,7 +1259,7 @@ your field.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-07-27 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -1307,7 +1309,7 @@ your field.</strong></p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-07-20 10:00 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -1336,13 +1338,13 @@ your field.</strong></p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/wiki-vs-code-rules/">“Code” vs “wiki” (vs “book”) rules for project contributions</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-07-20 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -1477,13 +1479,13 @@ about it.</p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/">Debian with unionfs root</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-07-13 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -1577,7 +1579,7 @@ or for my case it was easiest to make it not use netfilter:</p>
           <div class="post-meta">
             <span class="feed-title">Digital Flapjack</span>
             <span class="post-date">2026-07-01 08:42 UTC</span>
-            <span class="post-author"> · Author: Digital Flapjack</span>
+            
             <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
@@ -1637,13 +1639,13 @@ or for my case it was easiest to make it not use netfilter:</p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/zulip-guide/">Zulipchat guide: managing too much information</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-06-29 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -1901,13 +1903,13 @@ gives some underused features.e</p></li>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/digital-sovereignty-actions/">My digital sovereignty actions</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-06-17 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2130,13 +2132,13 @@ risk when people try to self-host things.</p></li>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/vision-of-nordic-scientific-computing/">A vision of Nordic Scientific Computing</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-05-16 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2268,13 +2270,13 @@ to share this.)</p></li>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/hopes-for-new-it-compliance/">Hopes for new IT compliance</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-05-11 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2403,13 +2405,13 @@ towards them.</p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/the-platform-compliance-pitfall/">The platform compliance pitfall</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-05-09 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2521,13 +2523,13 @@ platform effects in the future.</p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/book-review-first-break-all-the-rules/">Book review: First, break all the rules</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-04-26 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2625,13 +2627,13 @@ I try anyway.</p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/debian-read-only-root/">Notes on Debian with a read-only root</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-04-12 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2736,13 +2738,13 @@ containerd needed something mounted to be able to start.  In
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/it-department-manifesto/">Manifesto on university IT departments</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2026-03-10 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2825,13 +2827,13 @@ can do better.  In the current world, we have to do better.</p>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2025/systemantics/">Book review: Systemantics</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2025-12-15 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
@@ -2933,13 +2935,13 @@ cases, when the purposes are close enough.</p></li>
     
     <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
-        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="RKD Blog"></a>
+        <img class="post-icon" src="images/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/rse-lessons-from-civil-engineering/">RSE lessons from Civil Engineering</a></h1>
           <div class="post-meta">
-            <span class="feed-title">RKD Blog</span>
+            <span class="feed-title">Richard Darst</span>
             <span class="post-date">2025-07-31 00:00 UTC</span>
-            <span class="post-author"> · Author: RKD</span>
+            
             <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
