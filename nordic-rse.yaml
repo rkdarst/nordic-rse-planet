@@ -2,10 +2,10 @@
 
 # General site settings
 site:
-  title: "Planet"
+  title: "Nordic-RSE blog planet"
   site_url: "https://example.com/planet/"
   atom_feed_url: "https://example.com/planet/atom.xml"
-  # feed_guid: "urn:uuid:60a76c80-d399-11d9-b93C-0003939e0af6"
+  feed_guid: "urn:uuid:7fd32cd4-fd62-48f3-9052-920208210fb4"
   #   Optional stable feed id; defaults to atom_feed_url.
   #   Set it if you want the id to survive the feed URL moving.
 
@@ -13,6 +13,7 @@ site:
 output:
   atom_feed: "atom.xml"
   html_view: "planet.html"
+  logo: https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png
 
 # Item limits
 limits:
@@ -28,13 +29,13 @@ images:
 
 feeds:
   - url: "https://rkd.zgib.net/blog/atom.xml"
-    name: "RKD Blog"
-    author: "RKD"
+    name: "Richard Darst"
+    #author: "RKD"
     site: "https://rkd.zgib.net"
     icon: "https://rkd.zgib.net/_static/zeppelinbend-3b.jpg"   # optional face/logo per feed
 
   - url: "https://digitalflapjack.com/index.xml"
     name: "Digital Flapjack"
-    author: "Digital Flapjack"
+    #author: "Digital Flapjack"
     site: "https://digitalflapjack.com"
     resolve_urls: item
