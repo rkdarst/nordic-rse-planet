@@ -3,7 +3,7 @@ on:
   push:
     branches: [master]        # deploy only from the default branch
   schedule:
-    - cron: "4 7 * * *"      # daily; off the top of the hour (UTC) to dodge delays
+    - cron: "33 7 * * *"      # daily; off the top of the hour (UTC) to dodge delays
   workflow_dispatch:          # manual "Run workflow" button
 
 permissions:
