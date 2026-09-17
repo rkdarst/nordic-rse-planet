@@ -1,4 +1,10 @@
 {
+ "https://coderefinery.org/processed_images/coderefinery.7160c5016f6d96ba.png": {
+  "etag": "\"6a8e8474-4704\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "e07a43fa43144dcd.png",
+  "last_modified": "Wed, 26 Aug 2026 06:15:16 GMT"
+ },
  "https://digitalflapjack.com/weeknotes/2026-08-03/annotated.png": {
   "etag": null,
   "fetched_at": "2026-09-16T20:54:46+00:00",
@@ -136,6 +142,60 @@
   "fetched_at": "2026-09-16T20:54:46+00:00",
   "file": "11a34674b5aafe8a.jpg",
   "last_modified": "Tue, 30 Jun 2026 15:41:11 GMT"
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/academic-discipline.png": {
+  "etag": "\"1da90e2ceb12953a00b551d37040d558da5308bd349ee444c50fa071e1442a5b\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "f01f5d8f4a8875b4.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/career-stage.png": {
+  "etag": "\"6c47ffe5a3ebe5a132fc208104ba50dd32acc9fd9156bad7c59595a90f7ae68d\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "8d9686f51916e350.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/collaboration.png": {
+  "etag": "\"149efc5181ed7812729640535dde83b26dc7684c0fb58f754481ed4a7e31bd73\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "6f6a1193a8f1f61e.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/colleagues.png": {
+  "etag": "\"c3a0c74c7ba7e5a98fae4e3e05d4cb55383bd571ce6e9fc158b4f11f9527970b\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "e9b536ebbcccf969.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/participation-style.png": {
+  "etag": "\"f8cf98c3d842daae2afb83fbb0fc18225d6763b907e23ada825de50c27095c44\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "4e71b33bb33d45c4.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/pre-recorded-or-live-or-in-person.png": {
+  "etag": "\"7e54c9a126e10615dbf749a1516195a1920e3ca82cb00c384b09e2fc9b326505\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "4969ea271dc1aed7.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/recommending.png": {
+  "etag": "\"25a6f900aaad03da760a5cfdcd8ba4976d224724696f4d5bfe82095af18a62c2\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "cafc261872c3e0e1.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/reusable.png": {
+  "etag": "\"acd8dc3efeedd3672ce61a263ec36f5683ae720ad217cc227772fb862dbe2d6a\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "758e7d95e44bad33.png",
+  "last_modified": null
+ },
+ "https://raw.githubusercontent.com/coderefinery/2026-post-workshop-survey/main/notebook/time-saved.png": {
+  "etag": "\"793f12e61bc22cc3648a2d871e8c4610bd42f880d42728fc409990cf0db17581\"",
+  "fetched_at": "2026-09-17T20:39:20+00:00",
+  "file": "b0d2674039a9085a.png",
+  "last_modified": null
  },
  "https://rkd.zgib.net/_images/digital-sovereignty-actions-pis.png": {
   "etag": "\"6aa9a686-41e07\"",
