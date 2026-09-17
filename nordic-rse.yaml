@@ -3,8 +3,8 @@
 # General site settings
 site:
   title: "Nordic-RSE blog planet"
-  site_url: "https://example.com/planet/"
-  atom_feed_url: "https://example.com/planet/atom.xml"
+  site_url: "https://rkdarst.github.io/nordic-rse-planet/planet/"
+  atom_feed_url: "https://rkdarst.github.io/nordic-rse-planet/planet/atom.xml"
   feed_guid: "urn:uuid:7fd32cd4-fd62-48f3-9052-920208210fb4"
   #   Optional stable feed id; defaults to atom_feed_url.
   #   Set it if you want the id to survive the feed URL moving.
@@ -13,12 +13,16 @@ site:
 output:
   atom_feed: "atom.xml"
   html_view: "planet.html"
+  css: []
   logo: https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png
 
 # Item limits
 limits:
   max_feed_items: 100    # Maximum items in the aggregated Atom feed
   html_view_limit: 30    # Number of posts to show in HTML view
+  max_posts_per_feed: 10
+  max_age_days: 90
+
 
 # Feed configuration with metadata
 # Local image cache; the directory doubles as deploy output and
@@ -28,14 +32,27 @@ images:
   ttl_days: 1
 
 feeds:
-  - url: "https://rkd.zgib.net/blog/atom.xml"
-    name: "Richard Darst"
-    #author: "RKD"
-    site: "https://rkd.zgib.net"
-    icon: "https://rkd.zgib.net/_static/zeppelinbend-3b.jpg"   # optional face/logo per feed
 
-  - url: "https://digitalflapjack.com/index.xml"
-    name: "Digital Flapjack"
-    #author: "Digital Flapjack"
+  # Organizations
+
+  - name: "CodeRefinery"
+    feed: "https://coderefinery.org/atom.xml"
+    site: "https://coderefinery.org/"
+    icon: "https://coderefinery.org/processed_images/coderefinery.7160c5016f6d96ba.png"
+
+  #- name: "Nordic-RSE"
+  #  url: "https://nordic-rse.org/atom.xml"
+  #  site: "https://nordic-rse.org/"
+  #  icon: "https://nordic-rse.org/img/favicon.ico"
+
+  # Individuals
+
+  - name: "Richard Darst"
+    feed: "https://rkd.zgib.net/blog/atom.xml"
+    site: "https://rkd.zgib.net"
+    icon: "https://rkd.zgib.net/_static/zeppelinbend-3b.jpg"
+
+  - name: "Digital Flapjack"
+    feed: "https://digitalflapjack.com/index.xml"
     site: "https://digitalflapjack.com"
     resolve_urls: item
