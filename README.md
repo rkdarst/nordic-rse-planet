@@ -1,4 +1,4 @@
-# Proposed nordic-RSE planet
+# Proposed Nordic-RSE planet
 
 This is a static-site based, Github-pages deployable "planet" - an
 old-style aggregator and viewer of RSS feeds.  It provides a way for
@@ -30,21 +30,24 @@ it broader) and we add feeds from, for example:
 
 ## Content policy
 
-It is not required that aggregated posts are exclusive to
-Nordic-RSE/CodeRefinery/etc. or work content.  It is OK if they tell
-about personal life and other activities, too - the purpose of a
-planet is to build community, not just advertise work stuff.  If
-desired, separate work-only or news-post-only feeds may be added.
+You are allowed and encouraged to post about things not related to
+work, including your own hacking, learning, opinions, and hobbies.
+(Work stuff is also allowed and encouraged, obviously).  The purpose
+of a planet is to build community, not just advertise work stuff that
+are mainly communicated through other channels.  If desired, separate
+work-only or news-post-only feeds may be added.
 
-Generated content ("AI") is not explicitly forbidden, but this is
-designed for human, non-clickbait content and it is required that
-there is as much human effort put into the production as there would
-be without "AI" (so proofreading, translation and so on are OK, and
-even some ideation).
+Content should be by humans and for humans.  Using content generators
+is not explicitly forbidden, but they should not reduce the amount of
+work you need to do to create and develop an idea (so at least
+proofreading, translation, and so on is OK).  Content shouldn't be
+misinformaiton, clickbait, sensationalist, hateful, and so on
+(it should follow the Code of Conduct).
 
 It's recommend to use good writing styles so that someone reading only
 the first paragraphs can get a good overview of what the post is
-about.
+about.  This allows people to quickly scan the planet for posts
+interesting to them.
 
 The HTML view has images cached.  Feeds, sites, and posts linked
 should not have dark patterns with respect to privacy or web security.
