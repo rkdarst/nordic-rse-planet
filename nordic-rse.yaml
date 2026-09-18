@@ -14,7 +14,7 @@ output:
   atom_feed: "atom.xml"
   html_view: "planet.html"
   css: []
-  logo: https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png
+  logo: "https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png"
 
 # Item limits
 limits:
@@ -40,10 +40,10 @@ feeds:
     site: "https://coderefinery.org/"
     icon: "https://coderefinery.org/processed_images/coderefinery.7160c5016f6d96ba.png"
 
-  #- name: "Nordic-RSE"
-  #  url: "https://nordic-rse.org/atom.xml"
-  #  site: "https://nordic-rse.org/"
-  #  icon: "https://nordic-rse.org/img/favicon.ico"
+  - name: "Nordic-RSE"
+    feed: "https://nordic-rse.org/atom.xml"
+    site: "https://nordic-rse.org/"
+    icon: "https://nordic-rse.org/img/favicon.ico"
 
   # Individuals
 
