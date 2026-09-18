@@ -46,7 +46,7 @@ feeds:
     icon: "https://nordic-rse.org/img/favicon.ico"
 
   - name: "Aalto Scientific Computing"
-    feed: "https://aaltoscicomp.github.io/blog/atom.xml"
+    feed: "https://aaltoscicomp.github.io/blog/blog/atom.xml"
     site: "https://aaltoscicomp.github.io/blog/"
     icon: "https://aaltoscicomp.github.io/blog/_static/logo-hexagons-02-compact.svg.ico"
 
