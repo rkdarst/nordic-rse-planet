@@ -57,6 +57,11 @@ feeds:
     site: "https://rkd.zgib.net"
     icon: "https://rkd.zgib.net/_static/zeppelinbend-3b.jpg"
 
+  - name: "Enrico Glerean"
+    feed: https://eglerean.github.io/rss.xml
+    site: https://eglerean.github.io/
+    #icon:
+
   - name: "Digital Flapjack"
     feed: "https://digitalflapjack.com/index.xml"
     site: "https://digitalflapjack.com"
