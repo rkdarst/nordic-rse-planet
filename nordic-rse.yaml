@@ -3,8 +3,8 @@
 # General site settings
 site:
   title: "Nordic-RSE blog planet"
-  site_url: "https://rkdarst.github.io/nordic-rse-planet/planet/"
-  atom_feed_url: "https://rkdarst.github.io/nordic-rse-planet/planet/atom.xml"
+  site_url: "https://rkdarst.github.io/nordic-rse-planet/"
+  atom_feed_url: "https://rkdarst.github.io/nordic-rse-planet/atom.xml"
   feed_guid: "urn:uuid:7fd32cd4-fd62-48f3-9052-920208210fb4"
   #   Optional stable feed id; defaults to atom_feed_url.
   #   Set it if you want the id to survive the feed URL moving.
