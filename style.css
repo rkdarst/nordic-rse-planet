@@ -1,0 +1,25 @@
+/* Sample stylesheet for pyplanet2 -- NOT wired into any config.
+   To use it, list it under output.css in your config:
+
+     output:
+       css:
+         - style.css
+
+   Every value below is the built-in default, so adding this file
+   changes nothing; edit the values (or delete lines you do not
+   override -- anything unset keeps its default).
+
+   The derived tiers (muted, faint, shadow) recompute from
+   --fg/--bg, so in most cases you only ever need to set --bg,
+   --fg, --title and --brand.  Overriding a derived one is still
+   possible by declaring it with a plain value. */
+
+:root {
+  /* Core palette */
+  --bg:    #fff;   /* page background                          */
+  --fg:    #222;   /* body text                                */
+  --title: #702552;   /* post titles, sidebar links, expand       */
+  --brand: #702552;   /* site title next to the logo; matches     */
+                   /* --title by value, set independently      */
+
+*/

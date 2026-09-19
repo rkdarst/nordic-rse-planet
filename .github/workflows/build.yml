@@ -35,7 +35,8 @@ jobs:
         run: |
           mkdir -p site
           cp planet.html site/index.html           # site root page
-          cp atom.xml site/atom.xml                # feed keeps its name
+          cp style.css site/                       # site root page
+          cp atom.xml site/                        # feed keeps its name
           cp -r images site/images 2>/dev/null || true  # cached images + index
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4

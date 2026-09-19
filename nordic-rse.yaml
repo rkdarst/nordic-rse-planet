@@ -13,8 +13,9 @@ site:
 output:
   atom_feed: "atom.xml"
   html_view: "planet.html"
-  css: []
-  logo: "https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png"
+  css: ["style.css"]
+  #logo: "https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png"
+  logo: "https://nordic-rse.org/img/favicon.ico"
 
 # Item limits
 limits:
