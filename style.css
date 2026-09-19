@@ -21,5 +21,14 @@
   --title: #702552;   /* post titles, sidebar links, expand       */
   --brand: #702552;   /* site title next to the logo; matches     */
                    /* --title by value, set independently      */
+}
 
-*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111;
+    --fg: #ddd;
+    --title: #EECDE1;
+    --brand: #EECDE1;
+    --line: #333;
+  }
+}
