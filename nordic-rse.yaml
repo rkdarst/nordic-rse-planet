@@ -13,9 +13,10 @@ site:
 output:
   atom_feed: "atom.xml"
   html_view: "planet.html"
-  css: ["style.css"]
+  css: ["static/style.css"]
   #logo: "https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png"
-  logo: "https://nordic-rse.org/img/favicon.ico"
+  logo: "static/favicon.ico"
+  favicon: "static/favicon.ico"
 
 # Item limits
 limits:
@@ -24,13 +25,13 @@ limits:
   max_posts_per_feed: 10
   max_age_days: 90
 
-
-# Feed configuration with metadata
 # Local image cache; the directory doubles as deploy output and
 # persists between CI runs via the deployed gh-pages branch.
 images:
-  dir: "images"
-  ttl_days: 1
+  dir: "images-cached"  # cache = deploy output directory
+  ttl_days: 30     # skip revalidation for entries younger than this
+  image_cache_max_bytes: 10485760  # larger images are dropped (10 MB)
+  # base_url: "https://example.com/planet/"  # default: site.site_url
 
 feeds:
 
