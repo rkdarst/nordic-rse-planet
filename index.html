@@ -6,32 +6,47 @@
   <title>Nordic-RSE blog planet</title>
   <link rel="alternate" type="application/atom+xml" title="Nordic-RSE blog planet Atom feed" href="https://rkdarst.github.io/nordic-rse-planet/planet/atom.xml">
   <style>
+    /* Theme palette: override these in an output.css stylesheet or a
+       styles block; every visual default below hangs off them.  The
+       derived tiers follow --fg/--bg automatically, so a dark theme is
+       just:  :root { --bg: #111; --fg: #ddd; --title: #6af; }  */
+    :root { --bg: #fff;      --fg: #222;      --title: #06c;
+            --brand: #06c;   /* same hue as --title by default, by intent */
+            --link: var(--title);
+            --line: #ddd;
+            --muted:  color-mix(in srgb, var(--fg) 62%, var(--bg));
+            --faint:  color-mix(in srgb, var(--fg) 46%, var(--bg));
+            --shadow: color-mix(in srgb, var(--fg) 15%, transparent); }
     body { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
            max-width: 46em; margin: 0 auto; padding: 1em;
-           color: #222; line-height: 1.5; }
+           background: var(--bg); color: var(--fg); line-height: 1.5; }
+    /* One default for every anchor; class rules below opt out as needed
+       (post/sidebar links take --title, feed names keep --muted). */
+    a { color: var(--link); }
     .site-header { display: flex; align-items: center; gap: 0.75em;
-                   padding-bottom: 0.5em; border-bottom: 2px solid #444; }
+                   padding-bottom: 0.5em; border-bottom: 2px solid var(--fg); }
     /* Never upscaled: height is capped, width free, so a wide logo
        keeps its shape and downscales only when too tall.  The
        placeholder div has no intrinsic size, hence its own 48px. */
     .logo { max-height: 4.5em; flex-shrink: 0; border-radius: 4px; }
-    .logo-placeholder { width: 72px; height: 72px; background: #ddd; }
-    .site-title { margin: 0; font-size: 1.5em; }
-    .generated { margin: 1em 0 0; font-size: 0.85em; color: #777; }
+    .logo-placeholder { width: 72px; height: 72px; background: var(--line); }
+    .site-title { margin: 0; font-size: 2.25em; color: var(--brand); }
+    .generated { margin: 1em 0 0; font-size: 0.85em; color: var(--muted); }
     .post { padding: 1em 1.25em; margin-bottom: 1.25em;
-            border: 1px solid #ddd; border-radius: 8px; }
+            border: 1px solid var(--line); border-radius: 8px; }
     .post-header { display: flex; align-items: center; gap: 0.75em;
                    margin-bottom: 0.5em; }
     /* Per-feed icon (feeds[].icon in the config); feeds without one
        get a grey placeholder box.  Linked to the feed's site when set. */
     .post-icon { width: 3.75em; height: 3.75em; border-radius: 50%;
                  flex-shrink: 0; object-fit: cover; }
-    .icon-placeholder { background: #ddd; }
+    .icon-placeholder { background: var(--line); }
     .post-icon-link { text-decoration: none; }
     .post-title { margin: 0 0 0.25em; }
-    .post-link { color: #06c; text-decoration: none; }
-    .post-meta { font-size: 0.85em; color: #666; }
+    .post-link { color: var(--title); text-decoration: none; }
+    .post-meta { font-size: 0.85em; color: var(--muted); }
     .feed-title { font-weight: bold; }
+    .feed-title a { color: inherit; }
     .summary { margin-top: 0.5em; position: relative;
                max-height: var(--post-clamp, 45vh); overflow: hidden; }
     /* Feed content must never widen the page on small screens:
@@ -51,18 +66,18 @@
     .summary.unclamped { max-height: none; overflow: visible; }
     .summary.clamped::after {
         content: ""; position: absolute; left: 0; right: 0; bottom: 0;
-        height: 3em; background: linear-gradient(transparent, #fff);
+        height: 3em; background: linear-gradient(transparent, var(--bg));
     }
     .post.expanded .summary { max-height: none; overflow: visible; }
     .post.expanded .summary.clamped::after { display: none; }
     .expand-toggle { display: none; margin-top: 0.4em; padding: 0.15em 0.8em;
                      position: sticky; bottom: 0.75em; left: 0;
                      width: fit-content;
-                     border: 1px solid #ddd; border-radius: 1.25em;
-                     background: #fff; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-                     color: #06c; font-size: 0.85em; cursor: pointer; }
+                     border: 1px solid var(--line); border-radius: 1.25em;
+                     background: var(--bg); box-shadow: 0 1px 4px var(--shadow);
+                     color: var(--title); font-size: 0.85em; cursor: pointer; }
     .summary.clamped + .expand-toggle { display: block; }
-    .site-footer { margin-top: 2em; font-size: 0.8em; color: #999;
+    .site-footer { margin-top: 2em; font-size: 0.8em; color: var(--faint);
                    clear: both; }
     /* Feed sidebar: a real right column beside the post flow, not a
        float (a float would visually sit inside the first post's card).
@@ -78,8 +93,9 @@
     main.planet > .generated { grid-column: 1 / -1; }
     main.planet > .post-flow { grid-column: 1; }
     main.planet > .feeds-sidebar { grid-column: 2; grid-row: 2;
-        padding: 0.75em 1em; border: 1px solid #ddd;
+        padding: 0.75em 1em; border: 1px solid var(--line);
         border-radius: 8px; font-size: 0.85em; }
+    .feeds-sidebar a { color: var(--title); }
     .feeds-sidebar h2 { margin: 0 0 0.5em; font-size: 1.1em; }
     .feeds-sidebar ul { margin: 0; padding-left: 1.2em; }
     .feeds-sidebar .feed-ref { font-size: 0.9em; }
@@ -96,17 +112,18 @@
   </style></noscript>
   <!-- External stylesheets (output.css in config) load after the built-in
        <style>, so their rules win. -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     
-    <img class="logo" src="https://nordic-rse.org/processed_images/NRSE_neighboring_oneline.5a84b6f72eafe84e.png" alt="Nordic-RSE blog planet logo">
+    <img class="logo" src="https://nordic-rse.org/img/favicon.ico" alt="Nordic-RSE blog planet logo">
     
     <h1 class="site-title">Nordic-RSE blog planet</h1>
   </header>
 
   <main class="planet">
-    <p class="generated">Generated <span class="generated-at">2026-09-18T12:20:58+00:00</span> ·
+    <p class="generated">Generated <span class="generated-at">2026-09-19T10:30:04+00:00</span> ·
       <a class="feed-link" href="https://rkdarst.github.io/nordic-rse-planet/planet/atom.xml">Atom feed</a> ·
       This page and feed are sanitized for security, formatting may be wrong.</p>
     
@@ -115,22 +132,22 @@
       <ul>
         
         <li><a href="https://coderefinery.org/">CodeRefinery</a>
-          <a class="feed-ref" href="https://coderefinery.org/atom.xml">feed</a></li>
+          (<a class="feed-ref" href="https://coderefinery.org/atom.xml">feed</a>)</li>
         
         <li><a href="https://nordic-rse.org/">Nordic-RSE</a>
-          <a class="feed-ref" href="https://nordic-rse.org/atom.xml">feed</a></li>
+          (<a class="feed-ref" href="https://nordic-rse.org/atom.xml">feed</a>)</li>
         
         <li><a href="https://aaltoscicomp.github.io/blog/">Aalto Scientific Computing</a>
-          <a class="feed-ref" href="https://aaltoscicomp.github.io/blog/blog/atom.xml">feed</a></li>
+          (<a class="feed-ref" href="https://aaltoscicomp.github.io/blog/blog/atom.xml">feed</a>)</li>
         
         <li><a href="https://rkd.zgib.net">Richard Darst</a>
-          <a class="feed-ref" href="https://rkd.zgib.net/blog/atom.xml">feed</a></li>
+          (<a class="feed-ref" href="https://rkd.zgib.net/blog/atom.xml">feed</a>)</li>
         
         <li><a href="https://eglerean.github.io/">Enrico Glerean</a>
-          <a class="feed-ref" href="https://eglerean.github.io/rss.xml">feed</a></li>
+          (<a class="feed-ref" href="https://eglerean.github.io/rss.xml">feed</a>)</li>
         
         <li><a href="https://digitalflapjack.com">Michael Dales</a>
-          <a class="feed-ref" href="https://digitalflapjack.com/index.xml">feed</a></li>
+          (<a class="feed-ref" href="https://digitalflapjack.com/index.xml">feed</a>)</li>
         
       </ul>
     </aside>
@@ -144,9 +161,8 @@
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-09-14/">Weeknotes: 14th September 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-09-14 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -185,9 +201,8 @@
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/the-unaccountability-machine/">Book review: The Unaccountability Machine</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Richard Darst</span>
+            <span class="feed-title"><a href="https://rkd.zgib.net">Richard Darst</a></span>
             <span class="post-date">2026-09-13 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
       </div>
@@ -773,9 +788,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-09-07/">Weeknotes: 7th September 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-09-07 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -863,9 +877,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-08-31/">Weeknotes: 31st August 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-08-31 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -935,9 +948,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-08-24/">Weeknotes: 24th August 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-08-24 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -984,9 +996,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-08-19/">Weeknotes: 19th August 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-08-19 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -1020,9 +1031,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-08-10/">Weeknotes: 10th August 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-08-10 07:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -1086,9 +1096,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://eglerean.github.io/posts/gratton-lab-ai-talk-2026/">AI in Research: Q&amp;A from a Zoom visit to Gratton Lab</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Enrico Glerean</span>
+            <span class="feed-title"><a href="https://eglerean.github.io/">Enrico Glerean</a></span>
             <span class="post-date">2026-08-07 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://eglerean.github.io/">https://eglerean.github.io/</a></span>
           </div>
         </div>
       </div>
@@ -1104,9 +1113,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-08-03/">Weeknotes: 3rd August 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-08-03 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -1161,9 +1169,8 @@ I’m happy with the lessons I learned along the way.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/chat-news-channels/">News channels in chat</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Richard Darst</span>
+            <span class="feed-title"><a href="https://rkd.zgib.net">Richard Darst</a></span>
             <span class="post-date">2026-07-31 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
       </div>
@@ -1327,9 +1334,8 @@ your field.</strong></p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://nordic-rse.org/blog/rse-survey-analysis/">Nordic RSEs: satisfied, skilled and in demand but looking for clearer career paths</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Nordic-RSE</span>
+            <span class="feed-title"><a href="https://nordic-rse.org/">Nordic-RSE</a></span>
             <span class="post-date">2026-07-30 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://nordic-rse.org/">https://nordic-rse.org/</a></span>
           </div>
         </div>
       </div>
@@ -1479,9 +1485,8 @@ Being named as main author is much less common: <strong>2.9%</strong> said this 
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-07-27/">Weeknotes: 27th July 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-07-27 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -1528,9 +1533,8 @@ Being named as main author is much less common: <strong>2.9%</strong> said this 
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-07-20/">Weeknotes: 20th July 2026</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-07-20 10:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -1562,9 +1566,8 @@ Being named as main author is much less common: <strong>2.9%</strong> said this 
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/wiki-vs-code-rules/">“Code” vs “wiki” (vs “book”) rules for project contributions</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Richard Darst</span>
+            <span class="feed-title"><a href="https://rkd.zgib.net">Richard Darst</a></span>
             <span class="post-date">2026-07-20 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
       </div>
@@ -1702,9 +1705,8 @@ about it.</p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/">Debian with unionfs root</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Richard Darst</span>
+            <span class="feed-title"><a href="https://rkd.zgib.net">Richard Darst</a></span>
             <span class="post-date">2026-07-13 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
       </div>
@@ -1795,9 +1797,8 @@ or for my case it was easiest to make it not use netfilter:</p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/monument-maintenance/">Maintaining a monument</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Michael Dales</span>
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-07-01 08:42 UTC</span>
-            <span class="post-site"> · Site: <a href="https://digitalflapjack.com">https://digitalflapjack.com</a></span>
           </div>
         </div>
       </div>
@@ -1860,9 +1861,8 @@ or for my case it was easiest to make it not use netfilter:</p>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://coderefinery.org/blog/post-workshop-survey/">Results from our 2026 post workshop survey</a></h1>
           <div class="post-meta">
-            <span class="feed-title">CodeRefinery</span>
+            <span class="feed-title"><a href="https://coderefinery.org/">CodeRefinery</a></span>
             <span class="post-date">2026-06-30 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://coderefinery.org/">https://coderefinery.org/</a></span>
           </div>
         </div>
       </div>
@@ -2160,9 +2160,8 @@ or provide code examples in multiple languages. We will consider if we can add s
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/zulip-guide/">Zulipchat guide: managing too much information</a></h1>
           <div class="post-meta">
-            <span class="feed-title">Richard Darst</span>
+            <span class="feed-title"><a href="https://rkd.zgib.net">Richard Darst</a></span>
             <span class="post-date">2026-06-29 00:00 UTC</span>
-            <span class="post-site"> · Site: <a href="https://rkd.zgib.net">https://rkd.zgib.net</a></span>
           </div>
         </div>
       </div>
