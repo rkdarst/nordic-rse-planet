@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nordic-RSE blog planet</title>
-  <link rel="alternate" type="application/atom+xml" title="Nordic-RSE blog planet Atom feed" href="https://rkdarst.github.io/nordic-rse-planet/planet/atom.xml">
+  <link rel="alternate" type="application/atom+xml" title="Nordic-RSE blog planet Atom feed" href="https://rkdarst.github.io/nordic-rse-planet/atom.xml">
   <style>
     /* Theme palette: override these in an output.css stylesheet or a
        styles block; every visual default below hangs off them.  The
@@ -53,6 +53,7 @@
     .post-title { margin: 0 0 0.25em; overflow-wrap: break-word; }
     .post-link { color: var(--title); text-decoration: none; }
     .post-meta { font-size: 0.85em; color: var(--muted); }
+    .content-note { margin: 0.25em 0 0; font-size: 0.85em; color: var(--muted); }
     .feed-title { font-weight: bold; }
     .feed-title a { color: inherit; }
     .summary { margin-top: 0.5em; position: relative;
@@ -134,8 +135,8 @@
   </header>
 
   <main class="planet">
-    <p class="generated">Generated <span class="generated-at">2026-09-19T12:01:58+00:00</span> ·
-      <a class="feed-link" href="https://rkdarst.github.io/nordic-rse-planet/planet/atom.xml">Atom feed</a> ·
+    <p class="generated">Generated <span class="generated-at">2026-09-19T19:26:18+00:00</span> ·
+      <a class="feed-link" href="https://rkdarst.github.io/nordic-rse-planet/atom.xml">Atom feed</a> ·
       This page and feed are sanitized for security, formatting may be wrong.</p>
     
     <aside class="feeds-sidebar">
@@ -175,6 +176,7 @@
             <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-09-14 10:00 UTC</span>
           </div>
+          <p class="content-note">Some embedded content from this post is not shown here (input) - consider seeing the original post.</p>
         </div>
       </div>
       
@@ -185,7 +187,7 @@
 <p>The main focus last week was migrating from version 1.1 of <a href="https://geotessera.org">Tessera</a> to the beta version 2 embeddings. In addition to the data layer changes, this also required a reworking of my inference code as <a href="https://github.com/ucam-eo/geotessera">the geotessera Python package's</a> API changed quite significantly (at least, based on how I was using it) as I migrated from the numpy storage system in v0.9 to the <a href="https://geozarr.org">zarr</a> based backend. The perils of innovating on multiple fronts!</p>
 <p>In the UK this seemed to not have a huge impact on my results, which is to be expected as I was relatively data rich in the UK: it would be interesting to see how I can scale back my data usage in the UK and still have good results perhaps, or as <a href="https://anil.recoil.org">Anil Madhavapeddy</a> suggested to use the lower resolution version of Tessera v2. Basically for Europe we can probably generate quite good habitat maps using much less compute and/or data than I'm currently doing.</p>
 <p>However, the flip side to that is that my very first run on Madagascar was mostly rubbish, due to a combined lack of occurrence data and <a href="https://openstreetmap.org">Open Street Map</a> data in that country. In the UK I found I got a reasonable map with just 50K occurrences going in, but Madagascar is over twice the size of the UK and has a much more varied set of habitats, and I only have around 5K occurrences, and those are very much clustered in popular points (mostly urban areas and forests), leaving a lot of the country under represented, and this clearly wrong in the final map. In small areas though it does a nice job, such as spotting these irrigation channels amongst the fields around <a href="https://en.wikipedia.org/wiki/Andapa">Andapa</a>.</p>
-<div><div><img alt="habitat map" src="images/cece0f754a1ccd1c.png"><img alt="satellite view" src="images/888b2483b4111e0f.png"><div></div><span>habitat map</span><span>satellite view</span></div></div>
+<div><div><img src="images/cece0f754a1ccd1c.png" alt="habitat map"><img src="images/888b2483b4111e0f.png" alt="satellite view"><div></div><span>habitat map</span><span>satellite view</span></div></div>
 <p>At the top level this is quite good, with the dark purple being arable and the light purple being urban. The greens are mostly subtropical moist forest with a smattering of subtropical montane forest, and then the blue is mostly wetlands, though technically this should be artificial drainage - though water is awkward in these maps without other data. But overall the matching is one of the few reasonably good bits we resolved, but that is one small bright star in an otherwise dark sky of incorrectness (yes, yes, I'm not a writer :).</p>
 <p>As with Brazil I'll review the data to see if there's any obvious pipeline deficiencies, particularly with respect to regional variances in how OSM data is structured (<a href="https://digitalflapjack.com/weeknotes/2026-08-31/">I wrote about this before for Brazil</a>), but ultimately I do think we just are data deficient for my approach in that region. In theory, that shouldn't matter, as Tessera is a global model, and pixels are comparable around the world, so if I have similar habitats in other countries that are more rich in occurrence data (perhaps in the southern parts of Africa, Indonesia, etc.) then that will work just as well. The challenge there is that the v2 embeddings for Tessera are not yet global, and so I'll need to see what I can do there. I still have confidence in the method I'm using, it's just how soon can I get the data to try and de-risk its applicability in areas like this.</p>
 <p>In the mean time if this is going to be blocked on more Tessera v2 coverage, then I might spend a bit of time shoring up my ideas around using Tessera to help suggest OSM edits.</p>
@@ -852,7 +854,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
 <h2>Radical cartography</h2>
 <p>I picked up <a href="https://www.panmacmillan.com/authors/william-rankin/radical-cartography/9781509888801">this book</a> last year and finally got around to starting to read it:</p>
 <p></p><div><div><div>
-<img alt="A photo of a book called &quot;Radical Cartography&quot; by William Rankin" src="images/6d27c392c08b78d2.jpg"></div></div></div><p></p>
+<img src="images/6d27c392c08b78d2.jpg" alt="A photo of a book called &quot;Radical Cartography&quot; by William Rankin"></div></div></div><p></p>
 <p>It feels particularly pertinent now that I'm building my own maps. As has been in the news this week with the <a href="https://news.un.org/en/story/2026/09/1168284">UN moving to promote people to use the Equal Earth Projection</a>, the lines we draw on maps are inherently political. In my line of work this is something I worry about a little, but probably not nearly enough. We make maps saying on some given metric where it is good or bad practice to do farming or logging or whatever, usually in the tropical countries where there is the most biodiversity to be impacted, but we do it from a place that is quite removed from that context. Historically it's generally been a bad thing when UK institutions try to dictate to the rest of the world how to run their affairs: that's a context in which our work needs to be considered. Hopefully the science we do is made open to question and scrutable so that people can pick it apart and see if what we claim holds up for themselves - this is one more reason that open science is so important. That hopefully enables it to be integrated with other information and insights we lack from not being of those places about which we attempt to derive results.</p>
 <p>This is why, in the habitat map work, I've been keen to seek out experts who have on the ground experience who can comment on the maps I produce and how well they reflect the ground based on their knowledge rather than a mix of my assumptions and what I can encode in Python scripts.</p>
 <p>I'm still early on in Radical Cartography, but already some of it has felt directly relevant:</p>
@@ -891,6 +893,7 @@ I’m happy with the lessons I learned along the way.</strong></p>
             <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
             <span class="post-date">2026-08-31 10:00 UTC</span>
           </div>
+          <p class="content-note">Some embedded content from this post is not shown here (canvas) - consider seeing the original post.</p>
         </div>
       </div>
       
@@ -1239,8 +1242,9 @@ topic.</p></li>
 <li><p>Apply this recursively at every level.</p></li>
 </ul>
 <p>This requires more thought in writing, but is a service for the
-reader.  I think we should strive more towards this <span>[note<span>: Does this post meet these criteria? I usually try to, but I don’t always manage.</span>]</span>.  It’s related to <code><span>Bottom-line</span> <span>Up</span> <span>Front</span> <span>communication</span> <span>&lt;https://en.wikipedia.org/wiki/BLUF_(communication)&gt;</span></code>__, from which I
-got some of these ideas.</p>
+reader.  I think we should strive more towards this <span>[note<span>: Does this post meet these criteria? I usually try to, but I don’t always manage.</span>]</span>.  It’s related to <a href="https://en.wikipedia.org/wiki/BLUF_(communication)">Bottom-line Up Front
+communication</a>,
+from which I got some of these ideas.</p>
 
 
 
@@ -1816,7 +1820,7 @@ or for my case it was easiest to make it not use netfilter:</p>
       
       <div class="summary"><p>Last week we took our semi-regular trip to the <a href="https://en.wikipedia.org/wiki/Uffington_White_Horse">Uffington White Horse</a>, a 3000 year old horse carved into the chalk of a hillside somewhere between Swindon and Oxford. The horse is maintained by the <a href="https://www.nationaltrust.org.uk">National Trust</a>, and each year they get a series of volunteer groups to come and help with the maintenance; we attend as part of the <a href="https://longnowlondon.org">Long Now London</a> cohort.</p>
 <p></p><div><div><div>
-<img alt="A photo taken from the top of a hill showing several people with buckets and tools walking towards some chalk carvings in the hill side. In the distance you can see a flat expanse of farmland stretching to the horizon." src="images/a4902c262146f203.jpg"></div></div></div><p></p>
+<img src="images/a4902c262146f203.jpg" alt="A photo taken from the top of a hill showing several people with buckets and tools walking towards some chalk carvings in the hill side. In the distance you can see a flat expanse of farmland stretching to the horizon."></div></div></div><p></p>
 <p>Perhaps it was the atypical heat getting to my brain, but whilst sat on the hill, trading in my keyboard for a trowel, I felt there were a good number of parallels to my time maintaining data-science pipelines, and possibly more broadly to software maintenance in general. This post is an attempt to collect those thoughts to see if they form any sort of cohesive comparison, or were just a sign I should have worn more sunscreen.</p>
 <h1>Constant maintenance required</h1>
 <p>Although we tend to think of geological features as being somewhat slow to change, the Uffington White Horse takes constant maintenance. Andy, the lead guide from the National Trust, was saying that it'd take only 5 to 10 years for the horse to vanish if it wasn't regularly maintained, which is a fate that has befallen many other such monuments. The type of maintenance varies year on year, as some tasks need to happen every year, such as the weeding, which is what I spent my time doing this year, versus laying on fresh chalk, which might happen every other year.</p>
@@ -1837,7 +1841,7 @@ or for my case it was easiest to make it not use netfilter:</p>
 <h1>Maintenance is active engagement with the work</h1>
 <p>Okay, so this year you're doing weeding. How hard can that be? You get a little tutorial on the trowel, and then look at where the horse should be chalk, and if you see a plant, remove it. Easy, right?</p>
 <p></p><div><div><div>
-<img alt="A photo of me kneeling next to a row of chalk in a grassy hillside. I&amp;apos;m using the end of the handle on a trowel to tamper down the chalk after removing a weed." src="images/11a34674b5aafe8a.jpg"></div></div></div><p></p>
+<img src="images/11a34674b5aafe8a.jpg" alt="A photo of me kneeling next to a row of chalk in a grassy hillside. I&amp;apos;m using the end of the handle on a trowel to tamper down the chalk after removing a weed."></div></div></div><p></p>
 <p>But it's not that simple. Yes, the weeds in the middle of a patch are quite easy to spot, but when you get to the edges, it gets a bit more murky: where has the grass and weeds encroached on the horse, and where has the chalk encroached on the grass, washed over by rain water or animals? There isn't a right or wrong answer here, you, the maintainer, have to make a decision. I could go and ask one of the National Trust people for every inch of horse edge, but do they know what it looked like last year? And is that what it looked like 100 years ago or 3000 years ago?</p>
 <p>There is no perfect answer here: you, the maintainer, have to make that decision. Each weed you remove is an act of curation or design. You are choosing what is part of the horse and what isn't. Yes, if you get it wildly wrong one of the organisers might step in to stop you, but in general you are not just doing labour, you are part of the horse now, it is shaped by your decisions, as small as they might seem.</p>
 <p>It perhaps isn't surprising that in general, despite the above decision making, people maintaining the horse tend towards a conservative approach, trying to make the least change possible. Over time that has led to the horse being thinner than it used to be: the grasses push on aggressively enough that the boundary still presses in over time. In the last few years archaeologists have studied the area around the horse and found that there is evidence to support it being widened a little bit all around.</p>
@@ -1851,7 +1855,7 @@ or for my case it was easiest to make it not use netfilter:</p>
 <hr>
 <p>For me the weeding is actually quite satisfying: you start on a patch of horse that has weeds on it, and as you go along you clear it and then you can look back at the area you worked on and see it's now a nice clean patch.</p>
 <p></p><div><div><div>
-<img alt="A first person view photograph of weeding the horse: you can see my bucket, my knees on a foam pad, and a trowel in my hand." src="images/7aacbc43a057f09a.jpg"></div></div></div><p></p>
+<img src="images/7aacbc43a057f09a.jpg" alt="A first person view photograph of weeding the horse: you can see my bucket, my knees on a foam pad, and a trowel in my hand."></div></div></div><p></p>
 <p>In software, fixing little bugs can be quite the chore, but I feel that by having a good suite of unit tests you can get to that same level of satisfaction: it comes from knowing that your effort did a change: either you fixed some tests that were red and now they're green, perhaps your coverage metrics went up, or you added entirely new tests and the test count is hire than before. I think as a mental game tests can help make little chores like fixing tiny bugs have at least the satisfaction of looking back down at the ground and seeing you cleared an area.</p>
 <h1>Too much of a good thing: part 2</h1>
 <p>Another issue in balancing the needs of the volunteer community and the needs of the horse is that Andy has something of a &quot;success failure&quot; on his hands: too many people want to maintain the horse now. Word of mouth has spread by people like me who went and had a good time: you get to sit on a hill, feel like you've contributed to something beyond yourself that will outlive you, and you get to hang out with the kind of person who thinks it's a good idea to sit on a hill and feel like you've contributed to something beyond yourself that will outlive you. So perhaps you have too many people chalking now that leads to you having to remove chalk the next year.</p>
