@@ -860,7 +860,7 @@ I’m happy with the lessons I learned along the way.&lt;/strong&gt;&lt;/p&gt;
 the sharer puts a bit of effort into a summary.  In the CodeRefinery
 chat, we’ve thought about how to build more interaction in our chat
 (even though, compared to some orgs, we think we have quite a bit.
-Perhaps that’s the &lt;a href="https://rkd.zgib.net/blog/2026/zulip-guide/"&gt;&lt;span&gt;power of Zulip&lt;/span&gt;&lt;/a&gt;).  My proposal is &lt;strong&gt;“news
+Perhaps that’s the &lt;a href="https://rkd.zgib.net/blog/2026/chat-news-channels/2026/zulip-guide/"&gt;&lt;span&gt;power of Zulip&lt;/span&gt;&lt;/a&gt;).  My proposal is &lt;strong&gt;“news
 channels”&lt;/strong&gt;.  The goal is like a blog or news aggregator, with the
 similar goal of educating ourselves and getting to know each other
 better.&lt;/p&gt;
@@ -1017,7 +1017,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; The Nordic RSE community is strongly rooted in computing, but RSE work supports many scientific domains. However, survey responses are strongly concentrated in STEM while social sciences appear underrepresented.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Two-panel figure. Left: horizontal bar chart of work disciplines ranked by selection share among Nordic respondents. Computer Science is highest. Right: horizontal bar chart of qualification disciplines with Computer Science again most common. Both panels use a single blue accent colour." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4623fa7a9f9a72b6.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4623fa7a9f9a72b6.png" alt="Two-panel figure. Left: horizontal bar chart of work disciplines ranked by selection share among Nordic respondents. Computer Science is highest. Right: horizontal bar chart of qualification disciplines with Computer Science again most common. Both panels use a single blue accent colour."&gt;
 &lt;h2&gt;RSE role and software experience&lt;/h2&gt;
 &lt;p&gt;Software development is central to the work of most respondents. &lt;strong&gt;93.5%&lt;/strong&gt; write software for academic research as part of their job, and &lt;strong&gt;67.2%&lt;/strong&gt; consider themselves professional software developers.&lt;/p&gt;
 &lt;p&gt;Many also have substantial experience: &lt;strong&gt;35.5%&lt;/strong&gt; reported &lt;strong&gt;15+ years&lt;/strong&gt; of software development experience, followed by &lt;strong&gt;10 years&lt;/strong&gt; (&lt;strong&gt;17.7%&lt;/strong&gt;) and &lt;strong&gt;5 years&lt;/strong&gt; (&lt;strong&gt;11.3%&lt;/strong&gt;).&lt;/p&gt;
@@ -1032,7 +1032,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Most respondents are in permanent, full-time employment, but fixed-term contracts are more common among younger respondents. RSE work also appears under different job titles.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Two-panel figure. Left: stacked bar chart of employment nature categories by three age groups (Below 35, 35-45, 45+), with colour-coded contract types. Right: ranked horizontal bar chart of recoded official job titles showing percentage and count labels; Software Engineer or Developer leads." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/48517227e9c34ec9.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/48517227e9c34ec9.png" alt="Two-panel figure. Left: stacked bar chart of employment nature categories by three age groups (Below 35, 35-45, 45+), with colour-coded contract types. Right: ranked horizontal bar chart of recoded official job titles showing percentage and count labels; Software Engineer or Developer leads."&gt;
 &lt;h2&gt;Time allocation: protecting time for software and research&lt;/h2&gt;
 &lt;p&gt;Software development took the largest share of working time, at &lt;strong&gt;44.7%&lt;/strong&gt; on average. This was followed by research (&lt;strong&gt;19.9%&lt;/strong&gt;), other activities (&lt;strong&gt;15.6%&lt;/strong&gt;), teaching (&lt;strong&gt;14.9%&lt;/strong&gt;), and management (&lt;strong&gt;14.4%&lt;/strong&gt;).&lt;/p&gt;
 &lt;p&gt;When asked how they would prefer to spend their time, respondents wanted more time for software development and research, and less time for management and other activities. The largest desired reduction was in management time, at &lt;strong&gt;-6.6&lt;/strong&gt; percentage points.&lt;/p&gt;
@@ -1041,8 +1041,8 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; RSEs spend most of their time developing software and would like even more time for software development and research, with less time spent on management.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Horizontal lollipop-style chart comparing mean actual time spent on each work activity with the mean desired change. Software development has the longest actual-time bars; management and other activities show desired decreases (orange-red dotted lines) while software and research show desired increases (green solid lines)." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/55f9ba73c7b98311.png"&gt;
-&lt;img alt="Faceted horizontal chart in three columns by age group. Each row is a work activity; solid bars show mean actual time and overlaid lines show mean desired change. Green lines mark desired increases, orange-red lines mark desired decreases. Software development dominates actual time across all age groups; management shows the largest desired reduction." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/dfb93ae395e96eeb.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/55f9ba73c7b98311.png" alt="Horizontal lollipop-style chart comparing mean actual time spent on each work activity with the mean desired change. Software development has the longest actual-time bars; management and other activities show desired decreases (orange-red dotted lines) while software and research show desired increases (green solid lines)."&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/dfb93ae395e96eeb.png" alt="Faceted horizontal chart in three columns by age group. Each row is a work activity; solid bars show mean actual time and overlaid lines show mean desired change. Green lines mark desired increases, orange-red lines mark desired decreases. Software development dominates actual time across all age groups; management shows the largest desired reduction."&gt;
 &lt;h2&gt;Technical toolbox: Python, GitHub, HPC and collaboration&lt;/h2&gt;
 &lt;p&gt;Python is by far the most commonly used programming language among respondents, selected by &lt;strong&gt;95.1%&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Git was reported as a version control tool by all respondents, and GitHub was selected by &lt;strong&gt;93.4%&lt;/strong&gt; as a collaboration platform for software development. Other frequently selected collaboration tools included Git (&lt;strong&gt;70.5%&lt;/strong&gt;), GitLab (&lt;strong&gt;52.5%&lt;/strong&gt;), and Slack (&lt;strong&gt;50.8%&lt;/strong&gt;).&lt;/p&gt;
@@ -1052,7 +1052,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Python, Git, GitHub and HPC are central parts of the Nordic RSE technical toolbox.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Four-panel grid. Top left: programming languages ranked by selection share, with Python highest. Top right: stacked bars of programming languages by age group. Bottom left: collaboration tools ranked, GitHub and Git leading. Bottom right: deployment platforms ranked, HPC most common." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/7c8e00d1190fb7ec.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/7c8e00d1190fb7ec.png" alt="Four-panel grid. Top left: programming languages ranked by selection share, with Python highest. Top right: stacked bars of programming languages by age group. Bottom left: collaboration tools ranked, GitHub and Git leading. Bottom right: deployment platforms ranked, HPC most common."&gt;
 &lt;h2&gt;Generative AI in RSE work&lt;/h2&gt;
 &lt;p&gt;Generative AI tools are already used regularly by many respondents. &lt;strong&gt;42.6%&lt;/strong&gt; reported daily use in RSE-related tasks, and &lt;strong&gt;19.7%&lt;/strong&gt; reported weekly use. &lt;strong&gt;16.4%&lt;/strong&gt; reported never using generative AI in their RSE work.&lt;/p&gt;
 &lt;p&gt;The most common use case was writing and debugging code, selected by &lt;strong&gt;82.0%&lt;/strong&gt;. Designing software architecture was the least common use case, at &lt;strong&gt;20.0%&lt;/strong&gt;. This suggests that generative AI is currently used more for practical coding tasks than for higher-level software design.&lt;/p&gt;
@@ -1063,7 +1063,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Generative AI is widely used for writing and debugging code, but software architecture is the least common use case.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Three-panel figure. Top: horizontal bar chart of generative AI usage frequency (daily use most common). Bottom left: purposes ranked by selection share, with writing and debugging code highest and software architecture lowest. Bottom right: tools ranked, ChatGPT leading, then Claude and Gemini." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/e62102c8fe996908.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/e62102c8fe996908.png" alt="Three-panel figure. Top: horizontal bar chart of generative AI usage frequency (daily use most common). Bottom left: purposes ranked by selection share, with writing and debugging code highest and software architecture lowest. Bottom right: tools ranked, ChatGPT leading, then Claude and Gemini."&gt;
 &lt;h2&gt;Software quality, testing and software citation&lt;/h2&gt;
 &lt;p&gt;Developer testing was the most common testing approach: &lt;strong&gt;78.7%&lt;/strong&gt; selected &amp;quot;developers do their own testing&amp;quot;. Automated testing with continuous integration was selected by &lt;strong&gt;52.5%&lt;/strong&gt;, while &lt;strong&gt;31.1%&lt;/strong&gt; selected &amp;quot;no formal testing but user feedback&amp;quot;.&lt;/p&gt;
 &lt;p&gt;Software citation appears to be common among those who answered the citation questions. &lt;strong&gt;82.1%&lt;/strong&gt; said they always reference software directly and &lt;strong&gt;66.7%&lt;/strong&gt; said they always reference a published paper describing the software. &lt;/p&gt;
@@ -1072,7 +1072,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Testing and software citation are common among respondents, but generating persistent identifiers such as DOIs is less common.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Two-row figure. Top row: three side-by-side horizontal Likert bar charts for software citation practices (direct reference, paper reference, DOI generation) using Never/Sometimes/Always colours. Bottom: horizontal bar chart of software testing methods ranked by selection share; developer self-testing is most common." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/61e3cb79935d565d.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/61e3cb79935d565d.png" alt="Two-row figure. Top row: three side-by-side horizontal Likert bar charts for software citation practices (direct reference, paper reference, DOI generation) using Never/Sometimes/Always colours. Bottom: horizontal bar chart of software testing methods ranked by selection share; developer self-testing is most common."&gt;
 &lt;h2&gt;Job satisfaction and labour market demand&lt;/h2&gt;
 &lt;p&gt;Respondents reported high levels of satisfaction. &lt;strong&gt;87.1%&lt;/strong&gt; were satisfied with their current job position, while &lt;strong&gt;4.8%&lt;/strong&gt; were unsatisfied. Career satisfaction was also high: &lt;strong&gt;80.3%&lt;/strong&gt; were satisfied and &lt;strong&gt;9.8%&lt;/strong&gt; were unsatisfied.&lt;/p&gt;
 &lt;p&gt;Many respondents also saw their expertise as relevant beyond their current workplace. &lt;strong&gt;69.0%&lt;/strong&gt; agreed that their experience is in demand on the labour market, compared with &lt;strong&gt;15.5%&lt;/strong&gt; who disagreed. This confidence appears across age groups, and is especially strong among respondents aged 45+, where &lt;strong&gt;83.3%&lt;/strong&gt; agreed that their experience is in demand. Among those under 35, &lt;strong&gt;73.7%&lt;/strong&gt; agreed, and among those aged 35-45, &lt;strong&gt;57.7%&lt;/strong&gt; agreed while &lt;strong&gt;19.2%&lt;/strong&gt; disagreed.&lt;/p&gt;
@@ -1080,7 +1080,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Most respondents are satisfied with their jobs and careers, and many feel their experience is in demand. Recognition from supervisors is reported more strongly than recognition from institutions.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Three side-by-side horizontal Likert bar charts for job satisfaction, career satisfaction, and perceived labour market demand. Green bars show agree responses, orange-red bars show disagree; satisfaction is high on all three items with job satisfaction strongest." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/5fa7eb1cfa48447b.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/5fa7eb1cfa48447b.png" alt="Three side-by-side horizontal Likert bar charts for job satisfaction, career satisfaction, and perceived labour market demand. Green bars show agree responses, orange-red bars show disagree; satisfaction is high on all three items with job satisfaction strongest."&gt;
 &lt;h2&gt;Career progression and promotion uncertainty&lt;/h2&gt;
 &lt;p&gt;Although many respondents are satisfied and feel that their skills are in demand, career progression within current roles appears less clear.&lt;/p&gt;
 &lt;p&gt;Overall, &lt;strong&gt;48.3%&lt;/strong&gt; disagreed that they are likely to gain a promotion within their current group, while &lt;strong&gt;20.7%&lt;/strong&gt; agreed. The pattern was stronger among older respondents: among those aged 45+, &lt;strong&gt;58.3%&lt;/strong&gt; disagreed and only &lt;strong&gt;8.3%&lt;/strong&gt; agreed.&lt;/p&gt;
@@ -1091,7 +1091,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Promotion routes are often unclear, especially beyond early-career stages.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Faceted grouped bar chart with three rows, one per career statement, and three age groups along the x-axis. Green bars show agree share, grey bars show neutral, and orange-red bars show disagree. Disagree exceeds agree for promotion likelihood and process clarity, especially among older groups; younger respondents are more optimistic about career-plan opportunities." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/9fd0ae0f6159c0bb.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/9fd0ae0f6159c0bb.png" alt="Faceted grouped bar chart with three rows, one per career statement, and three age groups along the x-axis. Green bars show agree share, grey bars show neutral, and orange-red bars show disagree. Disagree exceeds agree for promotion likelihood and process clarity, especially among older groups; younger respondents are more optimistic about career-plan opportunities."&gt;
 &lt;h2&gt;Skills development and training needs&lt;/h2&gt;
 &lt;p&gt;Most respondents learned the skills they need for RSE work through practice. &lt;strong&gt;83.6%&lt;/strong&gt; selected learning on the job, and &lt;strong&gt;65.6%&lt;/strong&gt; selected self-taught learning. A university course or module was selected by &lt;strong&gt;50.8%&lt;/strong&gt;, and online courses by &lt;strong&gt;32.8%&lt;/strong&gt;. &lt;/p&gt;
 &lt;p&gt;The most common future skill interests were AI-assisted development and agents&amp;quot; (&lt;strong&gt;22.5%&lt;/strong&gt;), HPC, parallel and GPU computing (&lt;strong&gt;22.5%&lt;/strong&gt;), communication, teaching and writing (&lt;strong&gt;20.0%&lt;/strong&gt;), DevOps, CI/CD and pipelines (&lt;strong&gt;12.5%&lt;/strong&gt;), and software testing, quality assirance and verification (&lt;strong&gt;12.5%&lt;/strong&gt;).&lt;/p&gt;
@@ -1100,7 +1100,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Most RSEs learned their skills through practice and self-study. Future skills interests include AI-assisted development, HPC, DevOps, testing and communication.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Three-panel figure. Top: ranked horizontal bar chart of skills respondents want to acquire, led by AI-assisted development and HPC. Bottom left: learning pathways ranked by selection share. Bottom right: teaching and training roles ranked; lecturing or content delivery is most common." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/961072de86d07011.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/961072de86d07011.png" alt="Three-panel figure. Top: ranked horizontal bar chart of skills respondents want to acquire, led by AI-assisted development and HPC. Bottom left: learning pathways ranked by selection share. Bottom right: teaching and training roles ranked; lecturing or content delivery is most common."&gt;
 &lt;h2&gt;Networks, community and local support structures&lt;/h2&gt;
 &lt;p&gt;Many respondents have peer networks beyond their closest colleagues. &lt;strong&gt;62.0%&lt;/strong&gt; reported having such a network, including &lt;strong&gt;24.1%&lt;/strong&gt; who had to build it from scratch.&lt;/p&gt;
 &lt;p&gt;A majority, &lt;strong&gt;55.9%&lt;/strong&gt;, reported being part of a dedicated research software group within their organisation. This suggests that Nordic RSEs already have local structures for support and collaboration. &lt;/p&gt;
@@ -1110,7 +1110,7 @@ your field.&lt;/strong&gt;&lt;/p&gt;
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Many RSEs have peer networks and local research software groups, but broader community structures could help with networking, standards, training, and collaboration.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Three-panel figure. Top left: peer-network categories ranked by selection share. Top right: binary Likert chart showing 56% belong to a dedicated research software group. Bottom: funding sources ranked, institutional support and grants most common." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/7f776e9b70ebe258.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/7f776e9b70ebe258.png" alt="Three-panel figure. Top left: peer-network categories ranked by selection share. Top right: binary Likert chart showing 56% belong to a dedicated research software group. Bottom: funding sources ranked, institutional support and grants most common."&gt;
 &lt;h2&gt;Publications, dissemination and conferences&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;51.6%&lt;/strong&gt; of respondents have published a paper about their software, for example in journals such as JOSS or SoftwareX. &lt;/p&gt;
 &lt;p&gt;When software contributes to a paper, acknowledgement practices vary.
@@ -1133,7 +1133,7 @@ Being named as main author is much less common: &lt;strong&gt;2.9%&lt;/strong&gt
 &lt;div&gt;
   &lt;p&gt;&lt;strong&gt;Key finding:&lt;/strong&gt; Respondents see a Nordic-RSE institute mainly as a platform for events, advocacy, career development, and community training.&lt;/p&gt;
 &lt;/div&gt;
-&lt;img alt="Two stacked heatmaps of multi-select priorities. Top: how Nordic-RSE could foster community engagement; conferences and workshops rank highest. Bottom: tasks the institute should undertake; advocacy, community training, and career-path promotion lead overall." src="https://rkdarst.github.io/nordic-rse-planet/images-cached/a47f31950e359bfa.png"&gt;
+&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/a47f31950e359bfa.png" alt="Two stacked heatmaps of multi-select priorities. Top: how Nordic-RSE could foster community engagement; conferences and workshops rank highest. Bottom: tasks the institute should undertake; advocacy, community training, and career-path promotion lead overall."&gt;
 &lt;h2&gt;Please share your thoughts or comments!&lt;/h2&gt;
 &lt;p&gt;We would love to hear what you think. Please take a moment and share your thoughts about the survey and the analysis in our collaborative document: &lt;a href="https://hackmd.io/@nordic-rse/rse-survey-2026"&gt;https://hackmd.io/@nordic-rse/rse-survey-2026&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;What's next&lt;/h2&gt;
@@ -1311,7 +1311,7 @@ about it.&lt;/p&gt;
 &lt;p&gt;I wanted to make a virtual machine that has a root that is immutable -
 when booted, it would have a tmpfs for all files, and then when
 reboots, everything goes back to normal.  I set this up before the
-&lt;a href="https://rkd.zgib.net/blog/2026/debian-read-only-root/"&gt;&lt;span&gt;read-only root filesystem&lt;/span&gt;&lt;/a&gt;,
+&lt;a href="https://rkd.zgib.net/blog/2026/debian-with-unionfs-root/2026/debian-read-only-root/"&gt;&lt;span&gt;read-only root filesystem&lt;/span&gt;&lt;/a&gt;,
 but the use case is slightly different here.  I want a way to test
 things on the internet, without going through my home network, more
 lightweight than making/snapshotting and deleting a VM every time.  It
@@ -1433,8 +1433,8 @@ or for my case it was easiest to make it not use netfilter:&lt;/p&gt;
 &lt;p&gt;In early 2026 we sent out a survey to participants of our workshops from 2024 and 2025.
 We received 72 responses and this blog post summarizes the findings.
 The survey was open from 2026-04-01 to 2026-04-30.&lt;/p&gt;
-&lt;p&gt;You can also browse the &lt;a href="https://coderefinery.org/blog/post-workshop-survey/CodeRefinery_post_workshop_survey_questions.pdf"&gt;survey questions&lt;/a&gt; and the &lt;a href="https://github.com/coderefinery/2026-post-workshop-survey" rel="external"&gt;GitHub repository&lt;/a&gt;,
-including the Jupyter notebook which generated the plots. We have archived the results on &lt;a href="https://doi.org/10.5281/zenodo.20738733" rel="external"&gt;Zenodo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can also browse the &lt;a href="https://coderefinery.org/blog/post-workshop-survey/CodeRefinery_post_workshop_survey_questions.pdf"&gt;survey questions&lt;/a&gt; and the &lt;a rel="external" href="https://github.com/coderefinery/2026-post-workshop-survey"&gt;GitHub repository&lt;/a&gt;,
+including the Jupyter notebook which generated the plots. We have archived the results on &lt;a rel="external" href="https://doi.org/10.5281/zenodo.20738733"&gt;Zenodo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;For each plot we also provide a summary in text form right below each plot.
 Further below you can find answers to free-form questions as well as suggestions for improvement which we received from the survey participants.&lt;/p&gt;
 &lt;p&gt;One thing we did not do with the answers was to try to cross-correlate questions
@@ -1444,7 +1444,7 @@ Further below you can find answers to free-form questions as well as suggestions
 Some lessons also have changed quite a bit since 2024/2025, and we therefore encourage everyone to revisit the lesson materials and videos.&lt;/p&gt;
 &lt;h2&gt;Survey results&lt;/h2&gt;
 &lt;h3&gt;Plots&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Plot estimating time saving" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/b0d2674039a9085a.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/b0d2674039a9085a.png" alt="Plot estimating time saving"&gt;&lt;/p&gt;
 &lt;p&gt;In your estimate, how much time per month have you saved as a result of attending a CodeRefinery workshop&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No time saved: 11&lt;/li&gt;
@@ -1452,28 +1452,28 @@ Some lessons also have changed quite a bit since 2024/2025, and we therefore enc
 &lt;li&gt;Hours: 37&lt;/li&gt;
 &lt;li&gt;Days: 13&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Plot about whether code is more reusable" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/758e7d95e44bad33.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/758e7d95e44bad33.png" alt="Plot about whether code is more reusable"&gt;&lt;/p&gt;
 &lt;p&gt;After attending the workshop, would you judge your code to be more reusable or not more reusable?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;My code is more reusable: 55&lt;/li&gt;
 &lt;li&gt;My code is not more reusable: 3&lt;/li&gt;
 &lt;li&gt;Not sure: 14&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Plot about whether collaboration is easier" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/6f6a1193a8f1f61e.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/6f6a1193a8f1f61e.png" alt="Plot about whether collaboration is easier"&gt;&lt;/p&gt;
 &lt;p&gt;After attending the workshop, has it become easier or not for you to collaborate on software development with your colleagues and collaborators?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Collaboration is easier: 49&lt;/li&gt;
 &lt;li&gt;Collaboration is not easier: 3&lt;/li&gt;
 &lt;li&gt;Not sure: 20&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Plot about whether colleagues have been introduced" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/e9b536ebbcccf969.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/e9b536ebbcccf969.png" alt="Plot about whether colleagues have been introduced"&gt;&lt;/p&gt;
 &lt;p&gt;Have you introduced one or more of your colleagues to new tools or practices as a result of the workshop?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;I have introduced one or more of my colleagues to new tools or practices: 48&lt;/li&gt;
 &lt;li&gt;I have not introduced one or more of my colleagues to new tools or practices: 19&lt;/li&gt;
 &lt;li&gt;Not sure: 5&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="How likely are you to recommend?" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/cafc261872c3e0e1.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/cafc261872c3e0e1.png" alt="How likely are you to recommend?"&gt;&lt;/p&gt;
 &lt;p&gt;How likely is it that you would recommend CodeRefinery workshop to a friend or colleague?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;10: 37&lt;/li&gt;
@@ -1483,7 +1483,7 @@ Some lessons also have changed quite a bit since 2024/2025, and we therefore enc
 &lt;li&gt;6: 2&lt;/li&gt;
 &lt;li&gt;4: 1&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="What would be your preferred delivery style for this workshop?" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4969ea271dc1aed7.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4969ea271dc1aed7.png" alt="What would be your preferred delivery style for this workshop?"&gt;&lt;/p&gt;
 &lt;p&gt;What would be your preferred delivery style for this workshop?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;MOOC (Asynchronous learning on learning platform): 8&lt;/li&gt;
@@ -1494,14 +1494,14 @@ Some lessons also have changed quite a bit since 2024/2025, and we therefore enc
 &lt;li&gt;In-person teaching with demos: 2&lt;/li&gt;
 &lt;li&gt;Local classroom for streamed workshop with exercises: 3&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Participation style" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4e71b33bb33d45c4.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4e71b33bb33d45c4.png" alt="Participation style"&gt;&lt;/p&gt;
 &lt;p&gt;Participation style&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Individual learner: 58&lt;/li&gt;
 &lt;li&gt;Learner in a team (with your colleagues/friends): 7&lt;/li&gt;
 &lt;li&gt;Learner in a local classroom: 6&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Career stage" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/8d9686f51916e350.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/8d9686f51916e350.png" alt="Career stage"&gt;&lt;/p&gt;
 &lt;p&gt;Career stage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Undergraduate student: 1&lt;/li&gt;
@@ -1509,7 +1509,7 @@ Some lessons also have changed quite a bit since 2024/2025, and we therefore enc
 &lt;li&gt;Researcher: 10&lt;/li&gt;
 &lt;li&gt;Professor: 2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="Academic discipline" src="https://rkdarst.github.io/nordic-rse-planet/images-cached/f01f5d8f4a8875b4.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/f01f5d8f4a8875b4.png" alt="Academic discipline"&gt;&lt;/p&gt;
 &lt;p&gt;Academic discipline&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Physical Sciences: 14&lt;/li&gt;
@@ -1659,8 +1659,8 @@ Though not all lessons/exercises have alternative tracks and we will look into p
 &lt;/li&gt;
 &lt;li&gt;AI-assisted coding workflows
 &lt;ul&gt;
-&lt;li&gt;In 2026 we introduced a new lesson on &lt;a href="https://coderefinery.github.io/coding-with-ai/" rel="external"&gt;responsible use of AI in assisted coding&lt;/a&gt;
-that replaced a previous lesson on &lt;a href="https://coderefinery.github.io/jupyter/" rel="external"&gt;Jupyter notebooks&lt;/a&gt;.
+&lt;li&gt;In 2026 we introduced a new lesson on &lt;a rel="external" href="https://coderefinery.github.io/coding-with-ai/"&gt;responsible use of AI in assisted coding&lt;/a&gt;
+that replaced a previous lesson on &lt;a rel="external" href="https://coderefinery.github.io/jupyter/"&gt;Jupyter notebooks&lt;/a&gt;.
 We are curious to get some more long term feedback on the usefulness of this lesson in the future.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -1683,7 +1683,7 @@ Maybe a good topic for the "bring your own code" sessions or as part of a semina
 &lt;/li&gt;
 &lt;li&gt;Open-source collaboration
 &lt;ul&gt;
-&lt;li&gt;We have some pointers for that in our &lt;a href="https://coderefinery.github.io/git-collaborative/forking-workflow/" rel="external"&gt;collaborative git lesson&lt;/a&gt;,
+&lt;li&gt;We have some pointers for that in our &lt;a rel="external" href="https://coderefinery.github.io/git-collaborative/forking-workflow/"&gt;collaborative git lesson&lt;/a&gt;,
 but will look into making it more specific.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
