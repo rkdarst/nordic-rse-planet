@@ -67,4 +67,3 @@ feeds:
   - name: "Michael Dales"
     feed: "https://digitalflapjack.com/index.xml"
     site: "https://digitalflapjack.com"
-    resolve_urls: item
