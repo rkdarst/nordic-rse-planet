@@ -136,7 +136,7 @@
   </header>
 
   <main class="planet">
-    <p class="generated">Generated <span class="generated-at">2026-09-28T08:56:08+00:00</span> ·
+    <p class="generated">Generated <span class="generated-at">2026-09-28T20:45:12+00:00</span> ·
       <a class="feed-link" href="https://rkdarst.github.io/nordic-rse-planet/atom.xml">Atom feed</a> ·
       This page and feed are sanitized for security, formatting may be wrong.</p>
     
@@ -169,13 +169,65 @@
 
     
     <article class="post">
+      <div class="post-header"><a class="post-icon-link" href="https://digitalflapjack.com">
+        <div class="post-icon icon-placeholder"></div></a>
+        <div>
+          <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/2026-09-28/">Weeknotes: 28th September 2026</a></h1>
+          <div class="post-meta">
+            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
+            <span class="post-date">2026-09-28 10:00 UTC</span>
+          </div>
+          <p class="content-note">Some embedded content from this post is not shown here (iframe) - consider seeing the original post.</p>
+        </div>
+      </div>
+      
+      <div class="summary"><h1>Last two weeks</h1>
+<h2>Copenhagen</h2>
+<p>I missed my weeknotes last week due to being away in Copenhagen for a few days. Other than adding to the prevailing narrative that Copenhagen is a nice place, a few specific notes for here.</p>
+<p>Firstly, I wrote last year about learning that the <a href="https://digitalflapjack.com/weeknotes/2025-08-04">Baltic Sea is effectively brackish water</a>, and so I was pleased to spot this salinity map in the local aquarium, <a href="https://denblaaplanet.dk/en/">Den Blå Planet</a>:</p>
+<p></p><div><div><div>
+<img src="images-cached/26ad51e2240ccd3d.jpg"></div></div></div><p></p>
+<p>This is a topic that is once again close to mind as I realise that from space you can't really tell water salinity, making the results I'm getting with coastal waters and lakes in my habitat map work somewhat challenging.</p>
+<hr>
+<p>Next up I saw this wonderful landscape in the <a href="https://copenhagencontemporary.org/en/fire-ice/">Fire &amp; Ice exhibition</a> of works by <a href="https://en.wikipedia.org/wiki/Kalaallit">Kalaallit</a> artists at the Copenhagen Contemporary art centre:</p>
+<p></p><div><div><div>
+<img src="images-cached/652cb3ed3928b617.jpg"></div></div></div><p></p>
+<p>It is a rendition of the town of <a href="https://en.wikipedia.org/wiki/Maniitsoq">Maniitsoq</a> in Kalaallit Nunaa/Greenland, by <a href="https://emiliasoelvsten.com">Emilia Sølvsten</a> rendered in sugar cones on a sugar base, linking the colonial past of the country with the product that is also heavily tied to colonial history. As someone who builds maps, I found the landscape itself a wonderful artefact, something that the Copenhagen Contemporary does well with it's series of very large halls allowing for art to be built at a scale. At the same time linking the cartography to europe's past colonialism is an interesting inversion of maps being used by those trying to take control rather than those who have been on the other side of things. As someone who builds maps I try to be aware of the way <a href="https://scarfedigitalsandbox.teach.educ.ubc.ca/decolonizing-maps-is-a-process-that-addresses-the-biases-inaccuracies-and-colonial-perspectives-inherent-in-many-cartographic-representations/">we've traditionally drawn and rendered the world</a> in 2D has been driven by those who wish to assert a global, western view, rather than one that will speak at a local scale, which goes beyond projection, but to even concepts like <a href="https://societyofcartographers.wordpress.com/wp-content/uploads/2018/07/51_ryan.pdf">how we colour water on maps</a>. And whilst today most people making maps aren't trying to make such assertions of power, it's just built into the defaults in all the tools we use, and what feels like no-choice is still reinforcing that legacy. There's more on the topic <a href="https://medium.com/technology-solidarity/indigenous-cartography-decolonizing-mapmaking-a6357112d7a7">in this article by Emily Jacobi</a>, including some nice physical maps made in Kalaallit Nunaa.</p>
+<hr>
+<p>Finally, on the topic of maps, I was very taken with not just the local public transport infrastructure (which worked amazingly well), but also the map:</p>
+<p></p><div><div><div>
+<img src="images-cached/a5971af01948c551.jpg"></div></div></div><p></p>
+<p>Superficially it is just another riff on a common theme for public transport maps, but I like the rainbow swoop through the city centre, and in particular I love the typeface they use:</p>
+<p></p><div><div><div>
+<img src="images-cached/31cd70b8464d4579.jpg"></div></div></div><p></p>
+<p>It seems a nicely humanised version of the original Macintosh system font <a href="https://en.wikipedia.org/wiki/Chicago_(typeface)">Chicago</a> to my eyes. As luck would have it, there was <a href="https://designmuseum.dk/en/exhibition/kontrapunkt/">an exhibit at the Danish Design Museum</a> about the work of <a href="https://kontrapunkt.com">Kontrapunkt</a>, the design agency who made the custom typeface used.</p>
+<p></p><div><div><div>
+<img src="images-cached/e5cc8dddbe3ed357.jpg"></div></div></div><p></p>
+<p>Such a lovely font!</p>
+<h2>LIFE catchup</h2>
+<p>As I mentioned <a href="https://digitalflapjack.com/weeknotes/2026-09-14/">last time</a> that I was having to do an update to the <a href="https://github.com/quantifyearth/life/">LIFE pipeline</a>, and that dragged on. I managed to avoid restructuring the pipeline to avoid some of the slowness of using <a href="https://snakemake.readthedocs.io/en/stable/">snakemake</a> to do the dependancy tracking on a per species level. When I started the pipeline it was on a home-grown custom pipeline tool, where this was faster, but snakemake does struggle with the fact that in the LIFE pipeline we use 34K species to generate around 250K AOHs and then another 250K per-species extinction risk maps before reducing them again to the final output. I did a little work towards making the <a href="https://github.com/quantifyearth/aoh-calculator/">AOH calculator</a> support building AOHs from a single GPKG/GeoJSON of many species rather just one species per input, but my pending trip to Copenhagen and my pending deadline to get some LIFE data to colleagues made me chicken out of a re-write of all that code just now.</p>
+<p>In the end I managed to get some performance wins by discoverring that by default <code>gdalwarp</code> is very memory conservative, and if you tell it to use more memory using the <code>-wm</code> flag then it gets significantly faster. Our big servers have over a terabyte of memory (bought in the pre-AI bubble days - so expensive, an order of magnitude less expensive than today), and so telling the <code>gdalwarp</code> stages in the pipeline to use 20% of available RAM got my reprojection times from from near 20 minutes to a couple of minutes. Given this happens quite often in the early stages of the pipeline, that's a significant saving. I suspect I'll need to update <a href="https://yirgacheffe.org">Yirgacheffe</a> to do this too, as if you re-project your map data at any point it is just calling <code>gdal.Warp</code>.</p>
+<h2>Habitat maps</h2>
+<p>On the habitat map I had some predictably disappointing results as I moved my method from the data-rich UK (lots of species occurrences on <a href="https://gbif.org">GBIF</a> and lots of land types/usage in <a href="https://openstreetmap.org">OpenStreetMap</a>) to areas that are more interesting from a biodiversity point of view like Madagascar where data coverage is very poor. I knew that the results would be bad, but it's always still a bit sad when you're proven correct on that. However, it was never the original plan to build per-country maps like I have been doing, I've just been doing that because of limited data access. Thankfully whilst I was away on holiday <a href="https://blog.dclimate.net/mapping-a-changing-planet-tesseras-global-earth-observation-embeddings-now-openly-available-on-aws/">Tessera v1.1 global coverage is now available</a>. Tessera v1.0 has been available globally for a while, but that had poor coastal masks, which is not suitable for what I do as a lot of biodiversity is found along the coast lines, even for terrestrial vertebrates. In theory Tessera embeddings are globally comparable, so in theory I should be able to find other regions that have data that have similar habitats to Madagascar and that'll help improve the quality of those data-deficient regions.</p>
+<p>Oh, and if you're interested in the details of my habitat map work, then I gave a group talk on it last week, which you can see here:</p>
+<div><div><div></div></div></div>
+<h1>This week</h1>
+<h2>LIFE</h2>
+<p>Ali pointed out an error in one of the scripts in the LIFE pipeline at the end, so having just completed a LIFE run I need to fix that small error and re-run the tail section of the pipeline.</p>
+<h2>Habitat maps</h2>
+<p>I had a good meeting with <a href="https://toao.com">Sadiq Jaffer</a> and <a href="https://anil.recoil.org">Anil Madhavapeddy</a> planning out some Tessera/Habitat map bits. I need to do an initial global run next, and then I'm going to seek assistance from Sadiq in some of the Tessera touch points, as I'm a bit of a Tessera newbie and I'm going to need help making this run efficiently/effectively as I go from country scale to global scale.</p></div>
+      <button type="button" class="expand-toggle" aria-expanded="false">Expand &#9662;</button>
+      
+    </article>
+    
+    <article class="post">
       <div class="post-header"><a class="post-icon-link" href="https://rkd.zgib.net">
         <img class="post-icon" src="images-cached/6a0855db9256ea61.jpg" alt="Richard Darst"></a>
         <div>
           <h1 class="post-title"><a class="post-link" href="https://rkd.zgib.net/blog/2026/my-preferred-ai-policy/">My preferred machine generated (“AI”) contribution policy</a></h1>
           <div class="post-meta">
             <span class="feed-title"><a href="https://rkd.zgib.net">Richard Darst</a></span>
-            <span class="post-date">2026-09-23 00:00 UTC</span>
+            <span class="post-date">2026-09-28 00:00 UTC</span>
           </div>
         </div>
       </div>
@@ -1948,70 +2000,6 @@ or for my case it was easiest to make it not use netfilter:</p>
 <p>If you don’t do the above, remember to <code><span>sysctl</span> <span>net.ipv4.ip_forward=1</span></code>.</p>
 
 </div>
-      <button type="button" class="expand-toggle" aria-expanded="false">Expand &#9662;</button>
-      
-    </article>
-    
-    <article class="post">
-      <div class="post-header"><a class="post-icon-link" href="https://digitalflapjack.com">
-        <div class="post-icon icon-placeholder"></div></a>
-        <div>
-          <h1 class="post-title"><a class="post-link" href="https://digitalflapjack.com/weeknotes/monument-maintenance/">Maintaining a monument</a></h1>
-          <div class="post-meta">
-            <span class="feed-title"><a href="https://digitalflapjack.com">Michael Dales</a></span>
-            <span class="post-date">2026-07-01 08:42 UTC</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="summary"><p>Last week we took our semi-regular trip to the <a href="https://en.wikipedia.org/wiki/Uffington_White_Horse">Uffington White Horse</a>, a 3000 year old horse carved into the chalk of a hillside somewhere between Swindon and Oxford. The horse is maintained by the <a href="https://www.nationaltrust.org.uk">National Trust</a>, and each year they get a series of volunteer groups to come and help with the maintenance; we attend as part of the <a href="https://longnowlondon.org">Long Now London</a> cohort.</p>
-<p></p><div><div><div>
-<img src="images-cached/a4902c262146f203.jpg" alt="A photo taken from the top of a hill showing several people with buckets and tools walking towards some chalk carvings in the hill side. In the distance you can see a flat expanse of farmland stretching to the horizon."></div></div></div><p></p>
-<p>Perhaps it was the atypical heat getting to my brain, but whilst sat on the hill, trading in my keyboard for a trowel, I felt there were a good number of parallels to my time maintaining data-science pipelines, and possibly more broadly to software maintenance in general. This post is an attempt to collect those thoughts to see if they form any sort of cohesive comparison, or were just a sign I should have worn more sunscreen.</p>
-<h1>Constant maintenance required</h1>
-<p>Although we tend to think of geological features as being somewhat slow to change, the Uffington White Horse takes constant maintenance. Andy, the lead guide from the National Trust, was saying that it'd take only 5 to 10 years for the horse to vanish if it wasn't regularly maintained, which is a fate that has befallen many other such monuments. The type of maintenance varies year on year, as some tasks need to happen every year, such as the weeding, which is what I spent my time doing this year, versus laying on fresh chalk, which might happen every other year.</p>
-<hr>
-<p>For data pipelines you might bet tempted to hope that once written, that's it: you can push the code to github once the experiment is finished, and when you next need it in a year or two for the follow on paper, it'll be good to go. Unfortunately that isn't the reality. No software package sits in isolation, we all build upon the work of others, and one of the unfortunate trends of development in the open source internet age is those things march on relentlessly when you're not looking.</p>
-<p>Typically this will cause trouble if you don't specify the absolute version of every package you depend on: these will update and occasionally introduce changes that change an API or some behaviour you depend on. In general I'm against pinning every dependency to a tight version, as people forget to update them later and then you miss important bugfixes or security fixes, but if you're parking your code for a hiatus on some other project, then it's probably worth doing a <code>pip freeze</code> or whatever the equivalent is for your language of choice. But even doing that isn't a guarantee of reproducibility down the line: I've done this in the past and found that although I pinned all my direct dependencies, some of the packages they depend on were not properly pinned. Then in HPC world you have things like the version of slurm or the GPU drivers might have moved on since you last used them too.</p>
-<p>Basically the pace of software tooling is constantly moving forward, and it's just an unfortunate fact that unmaintained software that works today may well break by the time you run it next year if you don't put in a little maintenance effort now and then.</p>
-<h1>Maintenance is multigenerational</h1>
-<p>Maintenance at this site has been going on longer than any individual contributor has been going on. Their motivations have been changing: at one point the local lord would get villagers to help maintain the grounds once a year and then throw a big party to compensate the villagers for their efforts, and now it's people less directly related to the area coming in from afar to help.</p>
-<hr>
-<p>Even though the time scales are much shorter, in research software there is a similar problem as the code is typically worked on by PhD students and research associates/assistants who have fixed short term contracts, which means even over a five year project the code base could have changed from one generation to another. In both cases you hope there's some overlap to help hand over the techniques and local knowledge, but we on the software team need to assume that we won't be the future custodians of the code we work on today, and leave tests and documentation and other structures in place to ensure the next generation can succeed.</p>
-<h1>Maintenance is not the same as preservation</h1>
-<p>I think there is a reasonable but incorrect assumption that the point of maintenance is to leave a thing exactly as it was before. I overheard one of the archaeologists from Oxford University who happened to be on site saying that in an early era of maintenance there was a rule that when weeding you had to snip the weed at ground level, but never disturb the chalk on the monument, as that would be damaging to it. Anyone who has had to do any gardening or maintain a path or driveway on their property will know this is a bad way to control weeds, as they'll just immediately grow back: you have to remove the roots to have any hope to stop them returning and spreading.</p>
-<p>And that is now what we do on the horse: I was given a trowel and instructed how to do a minimal dig to remove the weed with its roots, and then use the trowel to pat down and resurface the chalk so as not to leave a scar on the surface. In doing so I am modifying the horse ever so slightly, but in a way that ensures long term survival.</p>
-<hr>
-<p>I'd say the same is true for maintaining data-science pipelines. Whilst in general I hope that if there's a breaking change to a dependency I just need to change one line here, there are times where perhaps a package is no longer maintained and we need to move to something else, or someone else has implemented part of the pipeline in a more performance orintated way or is doing more active maintenance. In which case, I'd advocate you should take advantage of that, and change the pipeline to follow the path that means we're sharing more code with others and following common practice in our domain.</p>
-<p>To do this on a chalk horse is easier: I can look at where I've patted down the chalk again after removing the weed and know that I've done a good job. To do that on software requires a way to check that any change has left you with something that did what it did before, and so for that you ideally want a lot of unit tests or some other output check to be confident that you have maintained the pipeline.</p>
-<h1>Maintenance is active engagement with the work</h1>
-<p>Okay, so this year you're doing weeding. How hard can that be? You get a little tutorial on the trowel, and then look at where the horse should be chalk, and if you see a plant, remove it. Easy, right?</p>
-<p></p><div><div><div>
-<img src="images-cached/11a34674b5aafe8a.jpg" alt="A photo of me kneeling next to a row of chalk in a grassy hillside. I&amp;apos;m using the end of the handle on a trowel to tamper down the chalk after removing a weed."></div></div></div><p></p>
-<p>But it's not that simple. Yes, the weeds in the middle of a patch are quite easy to spot, but when you get to the edges, it gets a bit more murky: where has the grass and weeds encroached on the horse, and where has the chalk encroached on the grass, washed over by rain water or animals? There isn't a right or wrong answer here, you, the maintainer, have to make a decision. I could go and ask one of the National Trust people for every inch of horse edge, but do they know what it looked like last year? And is that what it looked like 100 years ago or 3000 years ago?</p>
-<p>There is no perfect answer here: you, the maintainer, have to make that decision. Each weed you remove is an act of curation or design. You are choosing what is part of the horse and what isn't. Yes, if you get it wildly wrong one of the organisers might step in to stop you, but in general you are not just doing labour, you are part of the horse now, it is shaped by your decisions, as small as they might seem.</p>
-<p>It perhaps isn't surprising that in general, despite the above decision making, people maintaining the horse tend towards a conservative approach, trying to make the least change possible. Over time that has led to the horse being thinner than it used to be: the grasses push on aggressively enough that the boundary still presses in over time. In the last few years archaeologists have studied the area around the horse and found that there is evidence to support it being widened a little bit all around.</p>
-<hr>
-<p>Maintenance isn't as glamorous as creation unfortunately, and so attracts fewer people to it, but I think that's partly as it's not seen as being as mentally engaging, and that couldn't be further from the truth, and in some cases might need more engagement than creation, as creation wasn't constrained by consideration and respect for what went before. I think if perhaps we better communicated the level of thought and insight that even trivial maintenance requires then it might be more attractive to people.</p>
-<p>In software the other lesson I take here is just that your job isn't to keep the code as it originally was: if best practice moves on, then follow it. The goal here is to keep the pipeline running and producing results, not to treat each line of code with reverence. The goal is maintenance of the method, not the current artefact that happens to embody that.</p>
-<h1>Too much of a good thing: part 1</h1>
-<p>When I started doing the regular maintenance on the horse, work would be done in two phases each year: a weeding phase, and then a chalking stage. The chalk from last year tends to discolour, so that is hammered into the ground to re-affirm the foundations of the horse, and then fresh chalk is poured on, leaving a nice clear horse. This hammering stage has become somewhat the focus of the volunteer effort as it's more fun than weeding. Indeed, the volunteer activity is usually just referred to as &quot;chalking the horse&quot;.</p>
-<p>But this year they had to undo some of this, as it's easier to add chalk in the middle of an area of horse, and less chalk was applied near the edges where it might roll onto the grass, and that bias has added up, giving the horse lines a convex rather than flat profile (in other words, it had a pot belly). So this year they had to remove some material to level the lines in the horse again, and now chalking is not considered an annual activity.</p>
-<p>Andy was apologising to us in the pub after the first day, as this has been part of the draw of making it a fun day for volunteers, and if this stopped then how will they maintain the labour force for the duller bits? Us on the Long Now London crew were fairly unanimous in saying we were happy to do whatever jobs need doing, but you can see why it might be of concern to Andy how he balances the practical needs of the horse with making it engaging enough to get some volunteer labour.</p>
-<hr>
-<p>For me the weeding is actually quite satisfying: you start on a patch of horse that has weeds on it, and as you go along you clear it and then you can look back at the area you worked on and see it's now a nice clean patch.</p>
-<p></p><div><div><div>
-<img src="images-cached/7aacbc43a057f09a.jpg" alt="A first person view photograph of weeding the horse: you can see my bucket, my knees on a foam pad, and a trowel in my hand."></div></div></div><p></p>
-<p>In software, fixing little bugs can be quite the chore, but I feel that by having a good suite of unit tests you can get to that same level of satisfaction: it comes from knowing that your effort did a change: either you fixed some tests that were red and now they're green, perhaps your coverage metrics went up, or you added entirely new tests and the test count is hire than before. I think as a mental game tests can help make little chores like fixing tiny bugs have at least the satisfaction of looking back down at the ground and seeing you cleared an area.</p>
-<h1>Too much of a good thing: part 2</h1>
-<p>Another issue in balancing the needs of the volunteer community and the needs of the horse is that Andy has something of a &quot;success failure&quot; on his hands: too many people want to maintain the horse now. Word of mouth has spread by people like me who went and had a good time: you get to sit on a hill, feel like you've contributed to something beyond yourself that will outlive you, and you get to hang out with the kind of person who thinks it's a good idea to sit on a hill and feel like you've contributed to something beyond yourself that will outlive you. So perhaps you have too many people chalking now that leads to you having to remove chalk the next year.</p>
-<p>That is an idea that Chris, who is one of the Long Now London organisers, is grappling with as he has to work out how to focus this energy otherwhere. It's not like there are not other things in the world that need maintaining, it's just they're perhaps not 3000 years old yet. However, you only get to be something 3000 years old if someone maintained you at year 1, year 10, year 100, etc. How do we make that seem as appealing when the reward isn't within your own lifetime?</p>
-<hr>
-<p>It's not much of a stretch to see a similar issue in open source software: there are big headline projects that people use all the time where being a maintainer might be useful for bragging rights or to improve your CV. We see maintainers of big projects being flooded by AI generated pull requests. But other smaller projects need maintenance too.</p>
-<p>Over the last year I've made PRs on a number of small projects with few users that I happen to use, as I hope that it'll keep them going for me in the future, and perhaps help others find them useful, but that's still motivated by personal gain - I'm fixing a bug that's got in my way. How do we take the eagerness of new software engineers trying to gain experience and CV points and more widely distribute that to help maintain the broader commons?</p>
-<p>Perhaps it's the solitary nature of coding that makes it harder to see how to bridge that gap. Real-world volunteering is in part a social thing: you get to do it with others. If I'm honest I do chalk the horse partially for selfish reasons too: it means I get to hang out with interesting people for a bit. I know from talking to others that they contribute to open source projects for that community spirit too. But I think both have a problem with bootstrapping community: there are many small open source projects that no longer have maintainers or just one maintainer for whom this isn't their main focus, yet would benefit from more regular updating; and in the real world for every Uffington White Horse there are many things in your local area that probably need someone to go maintain them but there is yet to be that community to draw people into it.</p>
-<h1>Tack</h1>
-<p>My thanks to the folk from the Long Now London group and the <a href="https://nordic-rse.org">Nordic-RSE</a> community who gave me feedback on this post, and thanks to <a href="https://lbj20.blogspot.com">Laura James</a> for the photo of me at work at chalkface. And a hat tip to <a href="https://rkd.zgib.net">Richard Darst</a> whose <a href="https://scicomp.aalto.fi/scicomp/hpc-kitchen/">HPC Kitchen</a> posts were partial inspiration for my musings here.</p></div>
       <button type="button" class="expand-toggle" aria-expanded="false">Expand &#9662;</button>
       
     </article>
