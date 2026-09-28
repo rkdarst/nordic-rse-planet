@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Nordic-RSE blog planet</title><link href="https://rkdarst.github.io/nordic-rse-planet/" rel="alternate"/><link href="https://rkdarst.github.io/nordic-rse-planet/atom.xml" rel="self"/><id>urn:uuid:7fd32cd4-fd62-48f3-9052-920208210fb4</id><updated>2026-09-17T09:00:00+00:00</updated><entry><title>BLOG: Scientific Research and GDPR: what do 132 submissions say?</title><link href="https://eglerean.github.io/posts/sciresgdpr/" rel="alternate"/><updated>2026-09-17T09:00:00+00:00</updated><author><name>Enrico Glerean</name></author><id>https://eglerean.github.io/posts/sciresgdpr/</id><summary type="html">A tool to explore the 132 public submissions to the EDPB draft guidelines on scientific research, and what they say about the definition of research, consent, and anonymisation.</summary></entry><entry><title>Weeknotes: 14th September 2026</title><link href="https://digitalflapjack.com/weeknotes/2026-09-14/" rel="alternate"/><updated>2026-09-14T10:00:00+00:00</updated><author><name>Michael Dales</name></author><id>https://digitalflapjack.com/weeknotes/2026-09-14/</id><summary type="html">&lt;p&gt;Some embedded content from this post is not shown here (input) - consider seeing the original post.&lt;/p&gt;&lt;h1&gt;Last week&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Nordic-RSE blog planet</title><link href="https://rkdarst.github.io/nordic-rse-planet/" rel="alternate"/><link href="https://rkdarst.github.io/nordic-rse-planet/atom.xml" rel="self"/><id>urn:uuid:7fd32cd4-fd62-48f3-9052-920208210fb4</id><updated>2026-09-23T00:00:00+00:00</updated><entry><title>My preferred machine generated (“AI”) contribution policy</title><link href="https://rkd.zgib.net/blog/2026/my-preferred-ai-policy/" rel="alternate"/><updated>2026-09-23T00:00:00+00:00</updated><author><name>Richard Darst</name></author><id>https://rkd.zgib.net/blog/2026/my-preferred-ai-policy/</id><summary type="html">
+
+&lt;p&gt;It’s all the rage to either ban anything touching content generators
+(“AI”) or go all in on it.  Neither are quite satisfying to me, and
+seem to miss the point.  Below is an attempt at the general policy I
+would prefer, if someone were contributing to one of my projects.&lt;/p&gt;
+&lt;p&gt;Once something is machine generated, it is hard for a human to get
+understanding (and control) of it again (it just becomes too verbose
+and not flowing with a human’s thoughts).  Thus, accepting a single
+large machine-generated contribution can affect all future work on
+that project.  This is one of the many reasons to reject such
+contributions.&lt;/p&gt;
+&lt;p&gt;The way I see it,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;When something is machine-generated, it’s hard for a human to
+understand and modify it.  Thus, machine-generated content shouldn’t
+be submitted to human-made projects by outsiders (the project owner
+decides to make that transition).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;If a project is machine-generated, then I don’t need you to run the
+generation machine for me.  I can do it myself, and I can control
+and review it better that way.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;The below is not to say that I think machine-generated content should
+necessarily be accepted at all or even is good.  There are plenty of
+other reasons to reject it.  Still, many reasons miss the point, so
+here is my point.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Still, a content generator machine can be useful, but where to draw
+the line?  I currently (2026) would say the following for my projects:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;div&gt;&lt;p&gt;Generating content should not replace human thought.  A good way to
+judge this is the amount of content out compared to the amount of
+content in.  If something would take you N time units to make
+without “AI”, and using whatever “AI” you want takes about N time
+units to make it with, I’ll consider this essentially a human
+contribution.&lt;/p&gt;
+&lt;p&gt;Machine-generating a contribution to save a lot of human thought can
+sometimes be useful, but submitting it for review by another human
+isn’t (they should review the generation process instead).  Thus,
+generated (or partly generated) contributions should be declared so
+that they can be given an appropriate type of review.  I will have a
+low rejection threshold since you didn’t spend much time on it and
+if you can do it in [few time units], I can do it in [few time
+units] too and can probably get the results I want faster by
+adjusting the input prompt myself, rather than reviewing it and
+making suggestions back to you.&lt;/p&gt;
+&lt;p&gt;Yes, this does make an asymmetry: I can use more of the content
+generator on my projects than you can.  Likewise, I won’t use when I
+send stuff to you.  That’s how it works.  Unfortunately, this does
+make a bit of a “rich get richer” system and affects how fast others
+can develop their skills, and that needs a solution.&lt;/p&gt;
+&lt;/div&gt;&lt;/blockquote&gt;
+&lt;p&gt;You can stop reading here.  If you want some specific examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Good: Using translation or assistive technologies, even spelling or
+grammar checkers, for your own stuff you contribute to me is fine:
+it helps you do human work more efficiently, or do a trivial
+processing task faster.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;If it significantly changes your words, it’s much less so.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bad: running the same as above on my content and contributing
+the changes.  I can do that myself just as easily.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Good: using a content generator to figure out what to do or how to
+do something, then doing most of the work yourself (or starting with
+a very early prototype).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Questionable: Using a content generator to paraphrase, rewrite, or
+change style is a borderline case. It outputs about as much as went
+in, but for what purpose? I would want to know what you think; don’t
+undersell yourself. I would also do this myself if needed.  If I
+wanted it in my style from a content generator, I would run the
+generator myself to get my style.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Uncertain: using a content generator to come up with some initial
+concept then expanding it out. For example, I might use it to come
+up with an idea for a roleplaying scenario, and then expand it out
+myself. I am bad at coming up with scenarios, but I think it is the
+expansion and refinement that is hard. I might be OK with the final
+product (machine idea + human development) contributed, but it’s
+heavily dependent on the situation.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bad: Using a content generator to write anything significant is a
+“no”. Most of this was in the content generator and gives me no
+value. Just refine your bullet points and let me ask the content
+generator if I need an expansion. Even if you fix it up, I can’t
+tell what you did vs. what has no value. Maybe instead use that to
+fix up your original prompt and just send me that?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Use a generator to write a cover letter for a job? Not going to
+want to read it.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use a content generator to write a report? I’m just going to skim
+it and not give much attention.  Just tell me the prompt.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Use a content generator to curate a section of background info,
+and delimiting it saying “This background was machine generated
+based on my curation and revision and think it’s useful?”  Not
+sure if it’s fully good, but at least I can live with it and won’t
+hold it against you if it’s clear.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bad: using a content generator to fix some code or add a
+feature. Describe the feature and I can prompt and review myself
+(yes, might want to try the prompt yourself to make sure it works).&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Bad: you use a content generator to make some decision for
+yourself. This may be fine for you, but don’t pass it off to someone
+else as “your” decision.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</summary></entry><entry><title>BLOG: Scientific Research and GDPR: what do 132 submissions say?</title><link href="https://eglerean.github.io/posts/sciresgdpr/" rel="alternate"/><updated>2026-09-17T09:00:00+00:00</updated><author><name>Enrico Glerean</name></author><id>https://eglerean.github.io/posts/sciresgdpr/</id><summary type="html">A tool to explore the 132 public submissions to the EDPB draft guidelines on scientific research, and what they say about the definition of research, consent, and anonymisation.</summary></entry><entry><title>Weeknotes: 14th September 2026</title><link href="https://digitalflapjack.com/weeknotes/2026-09-14/" rel="alternate"/><updated>2026-09-14T10:00:00+00:00</updated><author><name>Michael Dales</name></author><id>https://digitalflapjack.com/weeknotes/2026-09-14/</id><summary type="html">&lt;p&gt;Some embedded content from this post is not shown here (input) - consider seeing the original post.&lt;/p&gt;&lt;h1&gt;Last week&lt;/h1&gt;
 &lt;h2&gt;Liverpool Makefest 2026&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://liverpoolmakefest.org"&gt;Liverpool Makefest 2026&lt;/a&gt; happened on Sunday and seemed to go well. This year rather than being an exhibitor I was on the organising team, as the event was effectively rebooted. After many hiccups along the way, it all seemed to come together in the end with 30 makers setting up stall and a few hundred people coming to see them. It was touch and go at times, but it looks like we pulled it off. It was definitely a team effort: so particular thanks to Jackie, Neil, Dan, and Mike, along with all the volunteers from the &lt;a href="https://doesliverpool.org/"&gt;DoES Liverpool community&lt;/a&gt; who ensured it went smoothly on the day, and the makers, some of which travelled quite a long way, who came and made the day so full of interesting things to see, hear, and touch.&lt;/p&gt;
 &lt;h2&gt;Habitat mapping&lt;/h2&gt;
@@ -1435,286 +1539,4 @@ or for my case it was easiest to make it not use netfilter:&lt;/p&gt;
 &lt;p&gt;Over the last year I've made PRs on a number of small projects with few users that I happen to use, as I hope that it'll keep them going for me in the future, and perhaps help others find them useful, but that's still motivated by personal gain - I'm fixing a bug that's got in my way. How do we take the eagerness of new software engineers trying to gain experience and CV points and more widely distribute that to help maintain the broader commons?&lt;/p&gt;
 &lt;p&gt;Perhaps it's the solitary nature of coding that makes it harder to see how to bridge that gap. Real-world volunteering is in part a social thing: you get to do it with others. If I'm honest I do chalk the horse partially for selfish reasons too: it means I get to hang out with interesting people for a bit. I know from talking to others that they contribute to open source projects for that community spirit too. But I think both have a problem with bootstrapping community: there are many small open source projects that no longer have maintainers or just one maintainer for whom this isn't their main focus, yet would benefit from more regular updating; and in the real world for every Uffington White Horse there are many things in your local area that probably need someone to go maintain them but there is yet to be that community to draw people into it.&lt;/p&gt;
 &lt;h1&gt;Tack&lt;/h1&gt;
-&lt;p&gt;My thanks to the folk from the Long Now London group and the &lt;a href="https://nordic-rse.org"&gt;Nordic-RSE&lt;/a&gt; community who gave me feedback on this post, and thanks to &lt;a href="https://lbj20.blogspot.com"&gt;Laura James&lt;/a&gt; for the photo of me at work at chalkface. And a hat tip to &lt;a href="https://rkd.zgib.net"&gt;Richard Darst&lt;/a&gt; whose &lt;a href="https://scicomp.aalto.fi/scicomp/hpc-kitchen/"&gt;HPC Kitchen&lt;/a&gt; posts were partial inspiration for my musings here.&lt;/p&gt;</summary></entry><entry><title>Results from our 2026 post workshop survey</title><link href="https://coderefinery.org/blog/post-workshop-survey/" rel="alternate"/><updated>2026-06-30T00:00:00+00:00</updated><author><name>CodeRefinery</name></author><id>https://coderefinery.org/blog/post-workshop-survey/</id><summary type="html">
-&lt;h1&gt;Results from our 2026 post workshop survey&lt;/h1&gt;
-&lt;p&gt;In early 2026 we sent out a survey to participants of our workshops from 2024 and 2025.
-We received 72 responses and this blog post summarizes the findings.
-The survey was open from 2026-04-01 to 2026-04-30.&lt;/p&gt;
-&lt;p&gt;You can also browse the &lt;a href="https://coderefinery.org/blog/post-workshop-survey/CodeRefinery_post_workshop_survey_questions.pdf"&gt;survey questions&lt;/a&gt; and the &lt;a rel="external" href="https://github.com/coderefinery/2026-post-workshop-survey"&gt;GitHub repository&lt;/a&gt;,
-including the Jupyter notebook which generated the plots. We have archived the results on &lt;a rel="external" href="https://doi.org/10.5281/zenodo.20738733"&gt;Zenodo&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;For each plot we also provide a summary in text form right below each plot.
-Further below you can find answers to free-form questions as well as suggestions for improvement which we received from the survey participants.&lt;/p&gt;
-&lt;p&gt;One thing we did not do with the answers was to try to cross-correlate questions
-(for instance to correlate feedback with career stage or academic discipline).&lt;/p&gt;
-&lt;p&gt;We are very grateful for the all your thoughtful comments, feedback and suggestions!&lt;/p&gt;
-&lt;p&gt;Many of the comments have made it into issues at the respective lessons and we will be working on them toward the autumn 2026 workshop.
-Some lessons also have changed quite a bit since 2024/2025, and we therefore encourage everyone to revisit the lesson materials and videos.&lt;/p&gt;
-&lt;h2&gt;Survey results&lt;/h2&gt;
-&lt;h3&gt;Plots&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/b0d2674039a9085a.png" alt="Plot estimating time saving"&gt;&lt;/p&gt;
-&lt;p&gt;In your estimate, how much time per month have you saved as a result of attending a CodeRefinery workshop&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;No time saved: 11&lt;/li&gt;
-&lt;li&gt;Minutes: 9&lt;/li&gt;
-&lt;li&gt;Hours: 37&lt;/li&gt;
-&lt;li&gt;Days: 13&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/758e7d95e44bad33.png" alt="Plot about whether code is more reusable"&gt;&lt;/p&gt;
-&lt;p&gt;After attending the workshop, would you judge your code to be more reusable or not more reusable?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;My code is more reusable: 55&lt;/li&gt;
-&lt;li&gt;My code is not more reusable: 3&lt;/li&gt;
-&lt;li&gt;Not sure: 14&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/6f6a1193a8f1f61e.png" alt="Plot about whether collaboration is easier"&gt;&lt;/p&gt;
-&lt;p&gt;After attending the workshop, has it become easier or not for you to collaborate on software development with your colleagues and collaborators?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Collaboration is easier: 49&lt;/li&gt;
-&lt;li&gt;Collaboration is not easier: 3&lt;/li&gt;
-&lt;li&gt;Not sure: 20&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/e9b536ebbcccf969.png" alt="Plot about whether colleagues have been introduced"&gt;&lt;/p&gt;
-&lt;p&gt;Have you introduced one or more of your colleagues to new tools or practices as a result of the workshop?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I have introduced one or more of my colleagues to new tools or practices: 48&lt;/li&gt;
-&lt;li&gt;I have not introduced one or more of my colleagues to new tools or practices: 19&lt;/li&gt;
-&lt;li&gt;Not sure: 5&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/cafc261872c3e0e1.png" alt="How likely are you to recommend?"&gt;&lt;/p&gt;
-&lt;p&gt;How likely is it that you would recommend CodeRefinery workshop to a friend or colleague?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;10: 37&lt;/li&gt;
-&lt;li&gt;9: 12&lt;/li&gt;
-&lt;li&gt;8: 13&lt;/li&gt;
-&lt;li&gt;7: 6&lt;/li&gt;
-&lt;li&gt;6: 2&lt;/li&gt;
-&lt;li&gt;4: 1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4969ea271dc1aed7.png" alt="What would be your preferred delivery style for this workshop?"&gt;&lt;/p&gt;
-&lt;p&gt;What would be your preferred delivery style for this workshop?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;MOOC (Asynchronous learning on learning platform): 8&lt;/li&gt;
-&lt;li&gt;Prerecorded lectures and live discussion sessions: 5&lt;/li&gt;
-&lt;li&gt;Live taught online lectures with exercises: 30&lt;/li&gt;
-&lt;li&gt;Live taught online lectures with demos: 16&lt;/li&gt;
-&lt;li&gt;In-person teaching with exercises: 6&lt;/li&gt;
-&lt;li&gt;In-person teaching with demos: 2&lt;/li&gt;
-&lt;li&gt;Local classroom for streamed workshop with exercises: 3&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/4e71b33bb33d45c4.png" alt="Participation style"&gt;&lt;/p&gt;
-&lt;p&gt;Participation style&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Individual learner: 58&lt;/li&gt;
-&lt;li&gt;Learner in a team (with your colleagues/friends): 7&lt;/li&gt;
-&lt;li&gt;Learner in a local classroom: 6&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/8d9686f51916e350.png" alt="Career stage"&gt;&lt;/p&gt;
-&lt;p&gt;Career stage&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Undergraduate student: 1&lt;/li&gt;
-&lt;li&gt;Postdoc: 15&lt;/li&gt;
-&lt;li&gt;Researcher: 10&lt;/li&gt;
-&lt;li&gt;Professor: 2&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src="https://rkdarst.github.io/nordic-rse-planet/images-cached/f01f5d8f4a8875b4.png" alt="Academic discipline"&gt;&lt;/p&gt;
-&lt;p&gt;Academic discipline&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Physical Sciences: 14&lt;/li&gt;
-&lt;li&gt;Computer and Information Sciences: 9&lt;/li&gt;
-&lt;li&gt;Earth and Related Environmental Sciences: 9&lt;/li&gt;
-&lt;li&gt;Biological Sciences: 9&lt;/li&gt;
-&lt;li&gt;Mathematics: 8&lt;/li&gt;
-&lt;li&gt;Health Sciences: 4&lt;/li&gt;
-&lt;li&gt;Electrical Engineering, Electronic Engineering, Information Engineering: 2&lt;/li&gt;
-&lt;li&gt;Chemical Sciences: 2&lt;/li&gt;
-&lt;li&gt;Languages and Literature: 2&lt;/li&gt;
-&lt;li&gt;Other:: 2&lt;/li&gt;
-&lt;li&gt;Psychology: 2&lt;/li&gt;
-&lt;li&gt;Other Natural Sciences: 1&lt;/li&gt;
-&lt;li&gt;Economics and Business: 1&lt;/li&gt;
-&lt;li&gt;Medical Engineering: 1&lt;/li&gt;
-&lt;li&gt;Civil Engineering: 1&lt;/li&gt;
-&lt;li&gt;Basic Medicine: 1&lt;/li&gt;
-&lt;li&gt;Mechanical Engineering: 1&lt;/li&gt;
-&lt;li&gt;Other Agricultural Sciences: 1&lt;/li&gt;
-&lt;li&gt;Environmental Engineering: 1&lt;/li&gt;
-&lt;li&gt;Other Engineering and Technologies: 1&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3&gt;Open text questions&lt;/h3&gt;
-&lt;p&gt;Has anything else changed in how you write code for your research after attending the workshop?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;yes, I revisited my git skills, learned testing functions and Pytest, also learned CI/CD and automated documentation using Sphinx all thanks to Coderefinery!&lt;/li&gt;
-&lt;li&gt;I got a lot more relaxed about using GitHub and now I can fix things myself when I screw up
-using git more regularly, using command line, improved code layout and documentation&lt;/li&gt;
-&lt;li&gt;I'm much more confident using git now. The interactive work on example projects really helped to understand git workflows.&lt;/li&gt;
-&lt;li&gt;Most of the question were not relevant for me. I used the workshop as an introduction to git, as I had to teach git later in the year. It was valuable for me to get this introduction as it helped me find my way around git.&lt;/li&gt;
-&lt;li&gt;Establishing a standardize style for the project (for example pep 8 in python).&lt;/li&gt;
-&lt;li&gt;Whenever I write new code I think about how other people could get more out of it. Version control is also a big aspect. The work with the existing code (that I didn't write) has not changed as much, since it is significantly harder to change&lt;/li&gt;
-&lt;li&gt;I participated as a master student in Spring 2024. My coding habits have changed a lot since then due to a variety of factors, and it's hard for me to judge how much is due to the code refinery workshop. But one of the most important changes is using git and version control. And code refinery probably gave me a head start in that.&lt;/li&gt;
-&lt;li&gt;more documentation more workflows&lt;/li&gt;
-&lt;li&gt;I have started using Git versioning for my codes which has made tracking changes and errors easier. I have also gained knowledge about licenses, modular codes etc&lt;/li&gt;
-&lt;li&gt;I am now recommending it to our younger students since it is very important not to give them a chance to stick with bad coding habits. Like using MATLAB. So, it would be great to advertise it more among them, because to my experience most of them have not heard about it before I tell them.&lt;/li&gt;
-&lt;li&gt;I’ve learned the importance of prioritizing code maintainability, which is essential for managing complex DH projects effectively.&lt;/li&gt;
-&lt;li&gt;I started using GitHub more frequently for the version control, even for personal projects.&lt;/li&gt;
-&lt;li&gt;I write more readable codes now. I try to use git now.&lt;/li&gt;
-&lt;li&gt;Yes I use git version control now while I didn't at all before&lt;/li&gt;
-&lt;li&gt;i understood the general git idea, but still not adopting it in my real work due to its complexity and collaboration with only one or two people&lt;/li&gt;
-&lt;li&gt;I still mostly write for myself, but I try to apply as much as possible the advice you gave to make it reusable/"sharable".&lt;/li&gt;
-&lt;li&gt;the point of view :)&lt;/li&gt;
-&lt;li&gt;Recently, programming has changed a lot. I don't code that much. I use GitHub Copilot a lot. I love the Sphinx documentation, and I use it a lot.&lt;/li&gt;
-&lt;li&gt;I did not attend all days.&lt;/li&gt;
-&lt;li&gt;I think more about my future self or others that could use what I write in the future.&lt;/li&gt;
-&lt;li&gt;no but I became more confident in reviewing someone else's code on github&lt;/li&gt;
-&lt;li&gt;Not sure&lt;/li&gt;
-&lt;li&gt;I write more tests to ensure that I dont break things later.&lt;/li&gt;
-&lt;li&gt;yes&lt;/li&gt;
-&lt;li&gt;Added proper version control. Also, results shared (and code used to get them) are always saved and backed up.&lt;/li&gt;
-&lt;li&gt;Yes, now I try to be more clear in the coding explanations and names I use in each one of my pipelines.&lt;/li&gt;
-&lt;li&gt;I write more modular code with packaging and open sharing it in mind, and create repositories for my projects. I am now trying to implement test-driven coding in my workflow.&lt;/li&gt;
-&lt;li&gt;I learned to use git, which make code development so much more structured&lt;/li&gt;
-&lt;li&gt;I pay more attention to details and I also plan in advance&lt;/li&gt;
-&lt;li&gt;I try to use git more often.&lt;/li&gt;
-&lt;li&gt;I'm not actually writing code in collaboration. However, in near future plans are to start writing code, and then I will use my learnings surely and the CodeRefinery has helped.&lt;/li&gt;
-&lt;li&gt;no. i forget everything after the workshop.&lt;/li&gt;
-&lt;li&gt;My code documentation has gotten much better.&lt;/li&gt;
-&lt;li&gt;Mmmm not exactly in writing code itself, but in how I manage it in relation to projects, and awareness of what tools are there for me. I have also used more snakemake flows&lt;/li&gt;
-&lt;li&gt;It has become more systematic and organized.&lt;/li&gt;
-&lt;li&gt;Now I start every code with reproducibility in mind!&lt;/li&gt;
-&lt;li&gt;No - but that is not related to the workshop - but related to colleges not on same level - and not enough time to follow up
-knowledge of best practises&lt;/li&gt;
-&lt;li&gt;Now I use AI to write some parts of the code or entire tools, if they are small and well defined. So everything is in a state of flux atm.&lt;/li&gt;
-&lt;li&gt;I helped me to think more detailed about the way in which currently  test my software, and how can improve the testing phase.&lt;/li&gt;
-&lt;li&gt;I always add a licence file when starting a new repo.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What topic(s) are missing from our workshops?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I can not think but API development maybe!&lt;/li&gt;
-&lt;li&gt;working with multiple remotes&lt;/li&gt;
-&lt;li&gt;more in-depth intermediate level topics, for example machine learning workflows and using common tools such as wandb, how to do sweeps- This was covered in the HPC kickstart a bit I think, but I would really like to learn this at an intermediate level, i.e. when the models are already set up etc, especially how to manage these incremental improvements when working on a machine learning model.&lt;/li&gt;
-&lt;li&gt;I am using uvicorn as a package manager and I believe you might want to recommend this as well for fast and stable virtual environments.&lt;/li&gt;
-&lt;li&gt;Contributions to open source software on GitHub. It has been mentioned a bit in the workshop, but could be extended more.&lt;/li&gt;
-&lt;li&gt;AI integration for formatting, documentation and structuring the project (maybe now you have included)&lt;/li&gt;
-&lt;li&gt;How to make changes to legacy code and how to advocate for the necessity of those changes. Maybe how to handle old dependencies that might need to change.&lt;/li&gt;
-&lt;li&gt;It would be nice to tell about how to construct a simple local package. Or a library. And then maybe a guide on how to resolve conflicts in GitHub.&lt;/li&gt;
-&lt;li&gt;more tailoring to scientists that use R to analyse their data but do not necessarily write software&lt;/li&gt;
-&lt;li&gt;Monitoring cpu usage / gpu usage in cluster, hand-on exercises to making own containers&lt;/li&gt;
-&lt;li&gt;None that come to mind, excellent introduction to know where to look for information.&lt;/li&gt;
-&lt;li&gt;Programming environment explanation.  ssh-related materials.   I found that even experienced researchers still struggle with these when they are using clusters.&lt;/li&gt;
-&lt;li&gt;More about the FAIR principles for research&lt;/li&gt;
-&lt;li&gt;LLM supported coding with copilot. I don't know if it is available now.&lt;/li&gt;
-&lt;li&gt;Dependency reording with pyproject.toml. It is maybe more complex, but becomes more and more used.&lt;/li&gt;
-&lt;li&gt;How to use turtoise git.&lt;/li&gt;
-&lt;li&gt;Advanced version of git Code design (advanced version of modular coding)&lt;/li&gt;
-&lt;li&gt;None that I can think of.&lt;/li&gt;
-&lt;li&gt;Basic steps to get started with running scripts on a server Correct way of putting runs in a GPU server Data wrangling tools&lt;/li&gt;
-&lt;li&gt;I would love to see more about environments and containers. But the length and content of the course was overall great for me.&lt;/li&gt;
-&lt;li&gt;How to best work with modern AI tools. (which will be different in half an year again, so good luck with that :D )&lt;/li&gt;
-&lt;li&gt;Currently no idea&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;What topic(s) were least interesting/helpful?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Everything was interesting and useful&lt;/li&gt;
-&lt;li&gt;Some topics were a bit too easy for the course, but I don't think there was anything that was completely not useful.&lt;/li&gt;
-&lt;li&gt;Shell crash course, which could be taught in other course.&lt;/li&gt;
-&lt;li&gt;I think everything was useful for learning or as a reminder of forgotten tools.&lt;/li&gt;
-&lt;li&gt;pandas and such. It was just boring, because in general you will anyway use tools that fit your task&lt;/li&gt;
-&lt;li&gt;Git and its use in collaborative coding&lt;/li&gt;
-&lt;li&gt;I liked all of them, if not immediately helpful, I believe they can be later.&lt;/li&gt;
-&lt;li&gt;Automated testing.  I know this is very important. As a researcher, writing test code is another burden for us besides the working code.&lt;/li&gt;
-&lt;li&gt;Jupyter notebooks because I do not really use them for my work&lt;/li&gt;
-&lt;li&gt;Snakemake&lt;/li&gt;
-&lt;li&gt;Jupyter notebooks&lt;/li&gt;
-&lt;li&gt;All were interesting, and the content materials adequate and well prepared.&lt;/li&gt;
-&lt;li&gt;deploy in the cloud&lt;/li&gt;
-&lt;li&gt;Cannot remember&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Anything else you would like to tell us about the workshop format?&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Workshop lectures at first week were a bit intense. Maybe more distributed lectures in couple weeks and give participants the time for hands-on work on their own time.&lt;/li&gt;
-&lt;li&gt;I think the format was great! I learned a lot&lt;/li&gt;
-&lt;li&gt;It was really well organised.&lt;/li&gt;
-&lt;li&gt;Great selection of subjects for broad applicability. I started using many tools recommended during the course which either facilitate my coding or help make my code more accessible for others. Examples include: git, pytest, click, and snakemake.&lt;/li&gt;
-&lt;li&gt;I think it is better to have more structured pre-recorded videos, than the live teacher format I saw. It was not always of high quality&lt;/li&gt;
-&lt;li&gt;It is great that you post the workshops on Youtube. Thanks!&lt;/li&gt;
-&lt;li&gt;Having more tasks on GitHub would help. especially with some personal support session to resolve all questions. For me it is still difficult to maintain GitHub mostly because I have no one to ask for help.&lt;/li&gt;
-&lt;li&gt;I think the format is innovative and works well!&lt;/li&gt;
-&lt;li&gt;Thank you. I love this workshop. It's practical and useful.&lt;/li&gt;
-&lt;li&gt;I find it great as it is. Of course, it would be nice in person but being online, it is more flexible&lt;/li&gt;
-&lt;li&gt;I like the format and it was best suiting for me as I could drop-in and out if needed. Recordings are great to have access to. Your documentation pages are fantastic.&lt;/li&gt;
-&lt;li&gt;I love the easy pace&lt;/li&gt;
-&lt;li&gt;The used format is very good: Live lectures with examples and exercises. Lectures are recorded to be seen if one cannot attend something specific and the lessons are also available all time.&lt;/li&gt;
-&lt;li&gt;I was completely new to git so some of the workshop was too overwhelming for my level, and I feel like I have not anchored yet the good practices. I was wondering if it would be interesting near the end of the workshop to have access to a summary of how git works for new people like me.&lt;/li&gt;
-&lt;li&gt;I found the workshop really useful. In my opinion it had just the right amount of material and hands on demos to allow me to start learning the subjects in need in my work more deeply myself.&lt;/li&gt;
-&lt;li&gt;It's brilliant to offer the videos for future view and learning as I can not attend the long training sessions due to other work. Keep it up - great work!&lt;/li&gt;
-&lt;li&gt;in-person workshops would be more effective.&lt;/li&gt;
-&lt;li&gt;Intensive workshops of approx. 5h are effective for learning but it is difficult to reserve 5h a day for 3-5 days.  Also towards the end, if the content is new, participants cannot focus and advance as fast.  Maybe considering a 3h daily for a week will make it easier to participate live, otherwise most of it is self-study with the videos.&lt;/li&gt;
-&lt;li&gt;I would just like to thank. The material and format was the best that I got in a course.&lt;/li&gt;
-&lt;li&gt;I think the format was excellent already, no need for changes.&lt;/li&gt;
-&lt;li&gt;I really like the practical part. But I would like to have more time to solve the exercises.&lt;/li&gt;
-&lt;li&gt;I seem to remember I quite enjoyed it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Comments from the project team&lt;/h2&gt;
-&lt;p&gt;Next, a few additional comments/explanations from the project team on some of the recurring wishes from the feedback survey:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Intermediate / advanced tracks
-&lt;ul&gt;
-&lt;li&gt;As we try to cater to a broad audience, we have been trying to have exercises for different tools and languages.
-Many lessons also include optional exercises, which are often more advanced.
-Though not all lessons/exercises have alternative tracks and we will look into providing more in the future.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;AI-assisted coding workflows
-&lt;ul&gt;
-&lt;li&gt;In 2026 we introduced a new lesson on &lt;a rel="external" href="https://coderefinery.github.io/coding-with-ai/"&gt;responsible use of AI in assisted coding&lt;/a&gt;
-that replaced a previous lesson on &lt;a rel="external" href="https://coderefinery.github.io/jupyter/"&gt;Jupyter notebooks&lt;/a&gt;.
-We are curious to get some more long term feedback on the usefulness of this lesson in the future.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Real-world adoption (bridging theory → practice)
-&lt;ul&gt;
-&lt;li&gt;We would like to provide this more through the "bring your own code" sessions after the workshop,
-though they have not had many people joining.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Environments / HPC / containers
-&lt;ul&gt;
-&lt;li&gt;Many of our partners offer training on these topics, see also: https://github.com/coderefinery/workshop-outro/#ask-for-local-support-from-partners&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Working with legacy code
-&lt;ul&gt;
-&lt;li&gt;This can be very specific to the type of code and language you are working on.
-Maybe a good topic for the "bring your own code" sessions or as part of a seminar series.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Open-source collaboration
-&lt;ul&gt;
-&lt;li&gt;We have some pointers for that in our &lt;a rel="external" href="https://coderefinery.github.io/git-collaborative/forking-workflow/"&gt;collaborative git lesson&lt;/a&gt;,
-but will look into making it more specific.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;More time to solve the exercises
-&lt;ul&gt;
-&lt;li&gt;We try to give at least 10-15 min per exercise and try to balance length of the workshop day, lecture and exercise time.
-All exercises come with solutions, so that they can also be completed after the workshop.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Summary of how git works
-&lt;ul&gt;
-&lt;li&gt;We could highlight this cheatsheet more during the workshop: https://aaltoscicomp.github.io/cheatsheets/git-the-way-you-need-it-cheatsheet.pdf&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Packaging
-&lt;ul&gt;
-&lt;li&gt;Our partner Aalto scicomp has this page: https://scicomp.aalto.fi/scicomp/packaging-software/ ;
-more detailed packaging is often language specific. In general we try to be programming language agnostic with our materials
-or provide code examples in multiple languages. We will consider if we can add something.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;R
-&lt;ul&gt;
-&lt;li&gt;We are working on adding more R to CodeRefinery lessons in respective tabs. Please contribute if you can :)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary></entry></feed>
+&lt;p&gt;My thanks to the folk from the Long Now London group and the &lt;a href="https://nordic-rse.org"&gt;Nordic-RSE&lt;/a&gt; community who gave me feedback on this post, and thanks to &lt;a href="https://lbj20.blogspot.com"&gt;Laura James&lt;/a&gt; for the photo of me at work at chalkface. And a hat tip to &lt;a href="https://rkd.zgib.net"&gt;Richard Darst&lt;/a&gt; whose &lt;a href="https://scicomp.aalto.fi/scicomp/hpc-kitchen/"&gt;HPC Kitchen&lt;/a&gt; posts were partial inspiration for my musings here.&lt;/p&gt;</summary></entry></feed>
